@@ -1,0 +1,767 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+html {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+#loading {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
+  opacity: 0;
+  animation: loading 3s linear;
+}
+
+@keyframes loading {
+  0% {
+    opacity: 1;
+  }
+}
+.loading_content {
+  position: absolute;
+  width: 30vh;
+  height: 30vh;
+  /*border:1px solid;*/
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ico {
+  position: absolute;
+  width: 40%;
+  height: 20%;
+  top: 39%;
+  left: 50%;
+  /*background:$fish_dark;*/
+  transform: translate(-50%, -50%);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/icoooo.png);
+  background-size: cover;
+  animation: ico 3s linear;
+  transform-origin: 30% 30%;
+}
+
+@keyframes ico {
+  0% {
+    transform: translate(-50%, -50%) rotatey(0deg);
+  }
+  20% {
+    transform: translate(-50%, -50%) rotatey(90deg);
+  }
+  50% {
+    transform: translate(-50%, -50%) rotatey(0deg);
+  }
+  70% {
+    transform: translate(-50%, -50%) rotatey(90deg);
+  }
+}
+.word_lo {
+  position: absolute;
+  font-size: 4vh;
+  top: 50%;
+  color: #7eabb1;
+  /*font-family:PingFang SC;*/
+  font-family: 微軟正黑體;
+  transform: translate(-50%, -50%);
+}
+
+.word_lo.w1 {
+  left: 20%;
+}
+
+.word_lo.w2 {
+  left: 40%;
+}
+
+.word_lo.w3 {
+  left: 60%;
+}
+
+.word_lo.w4 {
+  left: 80%;
+}
+
+#bg {
+  position: absolute;
+  width: 100vw;
+  height: 500vh;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  /*background:$blue;*/
+  padding: 0;
+  margin: 0;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  /*overflow-y: scroll;*/
+  opacity: 1;
+  animation: bg 3s linear;
+}
+
+@keyframes bg {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.section1 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section2 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 20%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section3 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 40%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section4 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 60%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.section5 {
+  position: absolute;
+  width: 100%;
+  height: 20%;
+  top: 80%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.compare {
+  position: absolute;
+  width: 80vh;
+  height: 70vh;
+  top: 0;
+  right: 5%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/compare01.png");
+  background-size: cover;
+}
+
+.info,
+.content,
+.info_stop,
+.info_final,
+.info_menu {
+  position: absolute;
+  color: #f0ebd8;
+  font-family: "微軟正黑體";
+  line-height: 1.5;
+  letter-spacing: 0.5vh;
+}
+
+.info {
+  top: 5%;
+  left: 60%;
+  padding-left: 3vh;
+  font-size: 6vh;
+  font-weight: 700;
+  /*background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  border-radius:3vh;*/
+}
+.info::before {
+  content: "";
+  position: absolute;
+  width: 4vh;
+  height: 4vh;
+  top: -15%;
+  left: 0%;
+  background: #ffdb02;
+  clip-path: polygon(0 0, 0% 100%, 100% 0);
+}
+
+.info_stop,
+.info_final,
+.info_menu {
+  top: 5%;
+  padding-left: 3vh;
+  font-size: 6vh;
+  font-weight: 700;
+  /*background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  border-radius:3vh;*/
+}
+.info_stop::before,
+.info_final::before,
+.info_menu::before {
+  content: "";
+  position: absolute;
+  width: 6vh;
+  height: 6vh;
+  top: 5%;
+  left: 5%;
+  background: #ffdb02;
+  clip-path: circle(50% at 50% 50%);
+}
+
+.info_stop.i_right {
+  left: 60%;
+}
+
+.info_stop.i_left {
+  left: 10%;
+}
+
+.info_final {
+  left: 10%;
+}
+
+.info_menu {
+  text-decoration: none;
+  transition: 0.25s;
+}
+.info_menu:hover {
+  color: #ffdb02;
+}
+
+.info_menu.i_right {
+  left: 60%;
+}
+
+.info_menu.i_left {
+  left: 30%;
+}
+
+.highlight {
+  color: #ffdb02;
+}
+
+.highlight_stop {
+  color: #ffdb02;
+  font-size: 2vh;
+  font-family: "Monda";
+  letter-spacing: 0vh;
+}
+
+.highlight_number {
+  color: #ffdb02;
+  font-size: 4vh;
+  font-family: "Monda";
+  letter-spacing: 0vh;
+}
+
+.content {
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+.wave1,
+.wave2 {
+  position: absolute;
+  bottom: 0;
+  width: 120%;
+  transform: translate(-50%);
+  background-size: cover;
+}
+
+.wave1 {
+  height: 20%;
+  /*top:130%;*/
+  left: 60%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/wave-back.png");
+  opacity: 0.5;
+  animation: wave1 3s infinite alternate;
+}
+
+@keyframes wave1 {
+  0% {
+    left: 40%;
+  }
+}
+@keyframes wave2 {
+  0% {
+    left: 60%;
+  }
+}
+.wave2 {
+  height: 30%;
+  /*top:120%;*/
+  left: 40%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/wave-back_0.png");
+  opacity: 0.25;
+  animation: wave2 3s infinite alternate;
+}
+
+.card {
+  position: absolute;
+  /*height: 350px;
+  width: 100%;
+  max-width: 850px;
+  margin: auto;*/
+  width: 70%;
+  height: 60%;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  /*background: $cream;*/
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  border-radius: 2vh;
+  box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.15);
+}
+
+.card .inner_part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 0 0 10vh;
+  height: 100%;
+  position: absolute;
+  /*border:1px solid;*/
+}
+
+/*#slideImg:checked ~ .inner_part {
+  padding: 0;
+  transition: 0.1s ease-in;
+}*/
+.inner_part .img {
+  height: 40vh;
+  width: 40vh;
+  top: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+  border-radius: 2vh;
+  box-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.15);
+}
+
+/*#slideImg:checked ~ .inner_part .img {
+  height: 100%;
+  width: 100%;
+  z-index: 99;
+  transition: 0.3s 0.2s ease-in;
+}*/
+.img img {
+  height: 100%;
+  width: 100%;
+  /*cursor: pointer;*/
+  opacity: 0;
+  transition: 0.6s;
+}
+
+#slide_1:checked ~ .inner_part .img_1,
+#slide_2:checked ~ .inner_part .img_2,
+#slide_3:checked ~ .inner_part .img_3,
+#slide_4:checked ~ .inner_part .img_4,
+#slide_5:checked ~ .inner_part .img_5,
+#slide_6:checked ~ .inner_part .img_6 {
+  opacity: 1;
+  transition-delay: 0.25s;
+}
+
+.contentt {
+  padding: 0 10vh 0 10vh;
+  width: 80%;
+  margin-left: 40vh;
+  opacity: 0;
+  transition: 0.5s;
+  /*border:1px solid;*/
+}
+
+/*#slideImg:checked ~ .inner_part .contentt {
+  display: none;
+}*/
+#slide_1:checked ~ .inner_part .contentt_1,
+#slide_2:checked ~ .inner_part .contentt_2,
+#slide_3:checked ~ .inner_part .contentt_3,
+#slide_4:checked ~ .inner_part .contentt_4,
+#slide_5:checked ~ .inner_part .contentt_5,
+#slide_6:checked ~ .inner_part .contentt_6 {
+  opacity: 1;
+  margin-left: 0;
+  z-index: 100;
+  transition-delay: 0.3s;
+}
+
+.contentt .title {
+  font-size: 6vh;
+  font-weight: 700;
+  color: #ffdb02;
+  font-family: "微軟正黑體";
+  margin: 0 0 0vh 0;
+}
+
+.contentt .text_slide {
+  font-size: 3vh;
+  font-weight: 700;
+  color: #f0ebd8;
+  font-family: "微軟正黑體";
+  margin: 5vh auto 0vh auto;
+  line-height: 6vh;
+  /*text-align: justify;*/
+}
+
+/*.contentt button {
+  padding: 15px 20px;
+  border: none;
+  font-size: 16px;
+  color: #fff0e6;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 50px;
+  cursor: pointer;
+  outline: none;
+  background: #000000;
+  float: right;
+}*/
+/*.contentt button:hover {
+  background: #cecece;
+  color: #000000;
+}*/
+.slider {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border:1px solid;*/
+}
+
+/*#slideImg:checked ~ .slider {
+  display: none;
+}*/
+.slider .slide {
+  position: relative;
+  /*position:absolute;*/
+  height: 3vh;
+  width: 10vh;
+  background: rgba(240, 235, 216, 0.25);
+  border-radius: 6vh;
+  display: inline-flex;
+  margin: 0 1vh;
+  cursor: pointer;
+}
+
+.slider .slide:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: -100%;
+  background: #ffdb02;
+  border-radius: 6vh;
+  transform: scaleX(0);
+  transition: transform 0.5s;
+  transform-origin: left;
+}
+
+#slide_1:checked ~ .slider .slide_1:before,
+#slide_2:checked ~ .slider .slide_2:before,
+#slide_3:checked ~ .slider .slide_3:before,
+#slide_4:checked ~ .slider .slide_4:before,
+#slide_5:checked ~ .slider .slide_5:before,
+#slide_6:checked ~ .slider .slide_6:before {
+  transform: scaleX(1);
+  width: 100%;
+}
+
+input {
+  display: none;
+}
+
+.pick {
+  position: absolute;
+  width: 70vh;
+  height: 70vh;
+  top: 5%;
+  left: 15%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick.png");
+  background-size: cover;
+  box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.15);
+}
+
+.cook {
+  position: absolute;
+  width: 70vh;
+  height: 70vh;
+  top: 5%;
+  left: 15%;
+  background: rgba(240, 235, 216, 0.25);
+  box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.15);
+  font-family: "Monda", sans-serif;
+  color: #f0ebd8;
+  font-size: 4vh;
+  text-align: center;
+}
+
+/*-----menu-----*/
+#menu {
+  position: fixed;
+  width: 15vh;
+  height: 100vh;
+  background: none;
+  left: 0;
+  top: 0;
+  border-right: 0.25vh solid #f0ebd8;
+  -webkit-transform: translateZ(0);
+}
+
+.menu_bg {
+  position: fixed;
+  /*background: $cream;*/
+  /*background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  width: 120vw;
+  height: 100vh;
+  left: -150vw;
+  /*top: -45vh;*/
+  top: 0;
+  transition: 1s;
+}
+.menu_bg::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 30%;
+  top: 70%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.hamburger {
+  position: absolute;
+  width: 50%;
+  height: 10vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#toggle {
+  /*position: absolute;
+  width: 100%;
+  height: 60%;
+  left: 50%;
+  top: 40%;*/
+  position: fixed;
+  width: 10vh;
+  height: 10vh;
+  top: 50%;
+  left: 7.5vh;
+  border: none;
+  margin: 0;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+#toggle:checked ~ .menu_bg {
+  transform: translatex(140vw);
+  transition: 1s;
+}
+
+/*#toggle:checked ~ .text {
+  color: $fish_dark;
+  transition: 1s;
+}*/
+.ham {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 400ms;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+  position: absolute;
+}
+
+.hamRotate.active {
+  transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+  transform: rotate(180deg);
+}
+
+.line {
+  fill: none;
+  transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+  stroke: #f0ebd8;
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  animation: line 1s infinite linear alternate;
+}
+
+.ham .top {
+  stroke-dasharray: 40 139;
+}
+
+.ham .bottom {
+  stroke-dasharray: 40 180;
+}
+
+.ham.active .top {
+  stroke-dashoffset: -98px;
+}
+
+.ham.active .bottom {
+  stroke-dashoffset: -138px;
+}
+
+.text {
+  /*position: absolute;
+  width: 100%;
+  height: 30%;
+  bottom: 0;
+  left: 50%;*/
+  position: fixed;
+  width: 10vh;
+  height: 5vh;
+  top: 52%;
+  left: 7.5vh;
+  transform: translate(-50%);
+  text-align: center;
+  /*font-family: 'Barlow Condensed', sans-serif;*/
+  /*font-family: 'Teko', sans-serif;*/
+  font-family: "Monda", sans-serif;
+  color: #f0ebd8;
+  font-size: 1vh;
+}
+
+/*-----menu_open-----*/
+/*#menu_link,
+.animal_link {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  list-style: none;
+}*/
+/*#menu_link {
+  left: 50%;
+  top: 70%;
+}*/
+/*.animal_link {
+  top: 30%;
+}*/
+/*.animal_link.a1 {
+  left: 35%;
+}*/
+/*.animal_link.a2 {
+  left: 65%;
+}*/
+.menu_top {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+.menu_bottom {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100%;
+  height: 50%;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fb,
+.ig {
+  position: absolute;
+  width: 8vh;
+  height: 8vh;
+  top: 85%;
+  padding-left: 3vh;
+}
+
+.fb {
+  left: 60%;
+}
+
+.ig {
+  left: 65%;
+}
+
+.about {
+  position: absolute;
+  width: 20%;
+  height: 8%;
+  top: 85%;
+  left: 37%;
+  border-radius: 50vh;
+  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
+  color: #7eabb1;
+  font-family: "微軟正黑體";
+  font-size: 3vh;
+  font-weight: 700;
+  text-align: right;
+  line-height: 9vh;
+  letter-spacing: 0.5vh;
+  box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.15);
+  transition: 0.25s;
+}
+.about:hover {
+  box-shadow: 0vh 0vh 0vh rgba(0, 0, 0, 0.15);
+}
+
+/*.big {
+  padding: 4vh;
+  color: $cream;
+  font-family: "微軟正黑體";
+}*/
+/*.small {
+  padding: 4vh;
+  color: $cream;
+  font-family: "微軟正黑體";
+  font-weight: 800;
+  font-size: 6vh;
+}*/
+/*.m,
+.animal {
+  font-family: "Monda", sans-serif;
+  color: $yellow;
+  font-size: 1vh;
+  padding: 4vh;
+}*/
+.boat_menu {
+  position: absolute;
+  width: 30vh;
+  height: 20vh;
+  top: 75%;
+  left: 30%;
+  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/boat.png");
+  background-size: cover;
+  animation: up 2s infinite alternate;
+}
