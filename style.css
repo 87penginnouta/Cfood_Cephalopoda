@@ -96,8 +96,8 @@ body {
   position: absolute;
   width: 100vw;
   height: 500vh;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
-  /*background:$blue;*/
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/3e74a3f7.png);
+  /*background-image:url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
   padding: 0;
   margin: 0;
   top: 0;
@@ -111,74 +111,56 @@ body {
 @keyframes bg {
   0% {
     opacity: 0;
+    /*height:100vh;*/
   }
   50% {
     opacity: 0;
+    /*height:500vh;*/
   }
   100% {
     opacity: 1;
+    /*height:500vh;*/
   }
 }
-.section1 {
+#section1,
+#section2,
+#section3,
+#section4,
+#section5 {
   position: absolute;
   width: 100%;
   height: 20%;
-  top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
 }
 
-.section2 {
-  position: absolute;
-  width: 100%;
-  height: 20%;
+#section1 {
+  top: 0;
+}
+
+#section2 {
   top: 20%;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
 }
 
-.section3 {
-  position: absolute;
-  width: 100%;
-  height: 20%;
+#section3 {
   top: 40%;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
 }
 
-.section4 {
-  position: absolute;
-  width: 100%;
-  height: 20%;
+#section4 {
   top: 60%;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
 }
 
-.section5 {
-  position: absolute;
-  width: 100%;
-  height: 20%;
+#section5 {
   top: 80%;
-  left: 0;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.compare {
-  position: absolute;
-  width: 80vh;
-  height: 70vh;
-  top: 0;
-  right: 5%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/compare01.png");
-  background-size: cover;
 }
 
 .info,
 .content,
 .info_stop,
 .info_final,
-.info_menu {
+.info_menu,
+.info_title,
+.content_open {
   position: absolute;
   color: #f0ebd8;
   font-family: "微軟正黑體";
@@ -188,7 +170,7 @@ body {
 
 .info {
   top: 5%;
-  left: 60%;
+  left: 20%;
   padding-left: 3vh;
   font-size: 6vh;
   font-weight: 700;
@@ -227,6 +209,27 @@ body {
   left: 5%;
   background: #ffdb02;
   clip-path: circle(50% at 50% 50%);
+}
+
+.info_title {
+  top: 10%;
+  left: 50%;
+  width: 40%;
+  padding-left: 3vh;
+  font-size: 7vh;
+  font-weight: 700;
+  text-align: center;
+  transform: translate(-50%);
+}
+.info_title::before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 100%;
+  height: 1%;
+  background: #f0ebd8;
+  transform: translate(-50%);
 }
 
 .info_stop.i_right {
@@ -275,252 +278,557 @@ body {
   letter-spacing: 0vh;
 }
 
+.open_highlight {
+  color: #ffdb02;
+  font-size: 3vh;
+}
+
+.content_open {
+  top: 50%;
+  left: 30%;
+  font-size: 2.5vh;
+  font-weight: 700;
+}
+
 .content {
   font-size: 3vh;
   font-weight: 700;
 }
 
-.wave1,
-.wave2 {
-  position: absolute;
-  bottom: 0;
-  width: 120%;
-  transform: translate(-50%);
-  background-size: cover;
-}
-
-.wave1 {
-  height: 20%;
-  /*top:130%;*/
-  left: 60%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/wave-back.png");
-  opacity: 0.5;
-  animation: wave1 3s infinite alternate;
-}
-
-@keyframes wave1 {
-  0% {
-    left: 40%;
-  }
-}
-@keyframes wave2 {
-  0% {
-    left: 60%;
-  }
-}
-.wave2 {
-  height: 30%;
-  /*top:120%;*/
-  left: 40%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/wave-back_0.png");
-  opacity: 0.25;
-  animation: wave2 3s infinite alternate;
-}
-
-.card {
-  position: absolute;
-  /*height: 350px;
-  width: 100%;
-  max-width: 850px;
-  margin: auto;*/
-  width: 70%;
-  height: 60%;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%);
-  /*background: $cream;*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
-  border-radius: 2vh;
-  box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.15);
-}
-
-.card .inner_part {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0 0 0 10vh;
-  height: 100%;
-  position: absolute;
-  /*border:1px solid;*/
-}
-
-/*#slideImg:checked ~ .inner_part {
-  padding: 0;
-  transition: 0.1s ease-in;
-}*/
-.inner_part .img {
-  height: 40vh;
-  width: 40vh;
-  top: 50%;
-  overflow: hidden;
-  flex-shrink: 0;
-  border-radius: 2vh;
-  box-shadow: 0.5vh 0.5vh 1vh rgba(0, 0, 0, 0.15);
-}
-
-/*#slideImg:checked ~ .inner_part .img {
-  height: 100%;
-  width: 100%;
-  z-index: 99;
-  transition: 0.3s 0.2s ease-in;
-}*/
-.img img {
-  height: 100%;
-  width: 100%;
-  /*cursor: pointer;*/
-  opacity: 0;
-  transition: 0.6s;
-}
-
-#slide_1:checked ~ .inner_part .img_1,
-#slide_2:checked ~ .inner_part .img_2,
-#slide_3:checked ~ .inner_part .img_3,
-#slide_4:checked ~ .inner_part .img_4,
-#slide_5:checked ~ .inner_part .img_5,
-#slide_6:checked ~ .inner_part .img_6 {
-  opacity: 1;
-  transition-delay: 0.25s;
-}
-
-.contentt {
-  padding: 0 10vh 0 10vh;
-  width: 80%;
-  margin-left: 40vh;
-  opacity: 0;
-  transition: 0.5s;
-  /*border:1px solid;*/
-}
-
-/*#slideImg:checked ~ .inner_part .contentt {
-  display: none;
-}*/
-#slide_1:checked ~ .inner_part .contentt_1,
-#slide_2:checked ~ .inner_part .contentt_2,
-#slide_3:checked ~ .inner_part .contentt_3,
-#slide_4:checked ~ .inner_part .contentt_4,
-#slide_5:checked ~ .inner_part .contentt_5,
-#slide_6:checked ~ .inner_part .contentt_6 {
-  opacity: 1;
-  margin-left: 0;
-  z-index: 100;
-  transition-delay: 0.3s;
-}
-
-.contentt .title {
-  font-size: 6vh;
+.content_title {
+  font-size: 4vh;
   font-weight: 700;
-  color: #ffdb02;
-  font-family: "微軟正黑體";
-  margin: 0 0 0vh 0;
 }
 
-.contentt .text_slide {
+.progress_content {
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  width: 20%;
+  height: 40%;
+  text-align: center;
+}
+
+.progress {
+  /*position: fixed;*/
+  position: absolute;
+  /*left:80vw;
+  top:15vh;*/
+  left: 0%;
+  top: 0%;
+  display: flex;
+  grid-template-rows: 100%;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  /*border:1px solid;*/
+}
+
+.intro_bartitle {
+  height: 100%;
+  display: grid;
+  align-content: space-between;
+}
+
+.intro_bartitle a {
+  color: #f0ebd8;
+  cursor: pointer;
+  margin: 0;
   font-size: 3vh;
   font-weight: 700;
-  color: #f0ebd8;
-  font-family: "微軟正黑體";
-  margin: 5vh auto 0vh auto;
-  line-height: 6vh;
-  /*text-align: justify;*/
+  letter-spacing: 0.5vh;
+  padding-left: 5vh;
+  text-decoration: none;
+}
+.intro_bartitle a:hover {
+  color: #ffdb02;
 }
 
-/*.contentt button {
-  padding: 15px 20px;
-  border: none;
-  font-size: 16px;
-  color: #fff0e6;
-  font-weight: 600;
-  letter-spacing: 1px;
-  border-radius: 50px;
-  cursor: pointer;
-  outline: none;
-  background: #000000;
-  float: right;
-}*/
-/*.contentt button:hover {
-  background: #cecece;
-  color: #000000;
-}*/
-.slider {
+.introbar {
   position: absolute;
-  width: 100%;
-  height: 10%;
-  top: 110%;
-  left: 50%;
-  transform: translate(-50%);
-  z-index: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  /*display: grid;
+  justify-items: center;
+  align-items: center;*/
+  height: 100%;
+  width: 10%;
+  top: 0%;
+  left: 0%;
   /*border:1px solid;*/
 }
 
-/*#slideImg:checked ~ .slider {
-  display: none;
-}*/
-.slider .slide {
-  position: relative;
-  /*position:absolute;*/
-  height: 3vh;
-  width: 10vh;
-  background: rgba(240, 235, 216, 0.25);
-  border-radius: 6vh;
-  display: inline-flex;
-  margin: 0 1vh;
-  cursor: pointer;
-}
-
-.slider .slide:before {
+.introline {
   position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: -100%;
+  width: 10%;
+  height: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f0ebd8;
+}
+
+.intro_ball {
+  position: absolute;
+  width: 50%;
+  height: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 50%;
   background: #ffdb02;
-  border-radius: 6vh;
-  transform: scaleX(0);
-  transition: transform 0.5s;
-  transform-origin: left;
 }
 
-#slide_1:checked ~ .slider .slide_1:before,
-#slide_2:checked ~ .slider .slide_2:before,
-#slide_3:checked ~ .slider .slide_3:before,
-#slide_4:checked ~ .slider .slide_4:before,
-#slide_5:checked ~ .slider .slide_5:before,
-#slide_6:checked ~ .slider .slide_6:before {
-  transform: scaleX(1);
+.intro_ball.b1 {
+  top: 3%;
+}
+
+.intro_ball.b2 {
+  top: 33%;
+}
+
+.intro_ball.b3 {
+  top: 63%;
+}
+
+.intro_ball.b4 {
+  top: 93%;
+}
+
+.fairy_content {
+  position: absolute;
+  width: 26%;
+  height: 50%;
+  /*border:1px solid;*/
+}
+
+.fairy_content.f1 {
+  bottom: 0;
+  left: 0;
+}
+
+.fairy_content.f2 {
+  top: 0;
+  right: 0;
+}
+
+.fairy_bg {
+  position: absolute;
   width: 100%;
+  height: auto;
+  bottom: 0%;
+  left: 0;
 }
 
-input {
-  display: none;
+.fairy {
+  position: absolute;
+  width: 54%;
+  height: auto;
+  bottom: 12%;
+  left: 30%;
+  /*background-image:url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/fairy1%402x.png);
+  background-size:cover;
+  background-position:center;*/
+  /*transition:0.5s;*/
+}
+.fairy:hover {
+  animation: fairy 1s infinite alternate;
+}
+
+@keyframes fairy {
+  50% {
+    transform: rotate(5deg);
+  }
+}
+.fairy_who {
+  position: absolute;
+  width: 54%;
+  height: auto;
+  top: 40%;
+  right: 10%;
+  transform: rotate(10deg);
+}
+
+.fairy_bubble {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  top: 10%;
+  left: 40%;
+}
+
+.who,
+.pick {
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /*border:1px solid;*/
+}
+
+.who {
+  width: 50%;
+  height: 66%;
 }
 
 .pick {
-  position: absolute;
-  width: 70vh;
-  height: 70vh;
-  top: 5%;
-  left: 15%;
-  background-image: url("https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick.png");
-  background-size: cover;
-  box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.15);
+  width: 60%;
+  height: 40%;
 }
 
-.cook {
+.modal_card {
   position: absolute;
-  width: 70vh;
-  height: 70vh;
+  width: 34%;
+  height: 48%;
+  /*width:32vh;
+  height:32vh;*/
+  /*background: $cream_bg;*/
+  transform: translate(-50%);
+}
+
+.modal_card.c1 {
+  top: 0;
+  /*left: 0;*/
+  left: 12.5%;
+}
+
+.modal_card.c2 {
+  top: 0;
+  /*left: 34%;*/
+  left: 50%;
+}
+
+.modal_card.c3 {
+  top: 0;
+  /*right: 0;*/
+  left: 87.5%;
+}
+
+.modal_card.c4 {
+  bottom: 0;
+  /*left: 0;*/
+  left: 12.5%;
+}
+
+.modal_card.c5 {
+  bottom: 0;
+  /*left: 34%;*/
+  left: 50%;
+}
+
+.modal_card.c6 {
+  bottom: 0;
+  /*right: 0;*/
+  left: 87.5%;
+}
+
+/* [Object] Modal
+ * =============================== */
+.modal {
+  opacity: 0;
+  visibility: hidden;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.75);
+  transition: opacity 0.25s ease;
+}
+
+.modal__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+.modal-state {
+  display: none;
+}
+
+.modal-state:checked + .modal {
+  opacity: 1;
+  visibility: visible;
+}
+
+.modal-state:checked + .modal .modal__inner {
+  top: 0;
+}
+
+/*modal打開後的空間*/
+.modal__inner {
+  transition: top 0.25s ease;
+  position: absolute;
+  top: -20%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 70%;
+  margin: auto;
+  overflow: auto;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/3e74a3f7.png);
+  border-radius: 1%;
+  /*padding: 1em 2em;*/
+  padding: 5% 5%;
+}
+
+/*關閉modal按鈕*/
+.modal__close {
+  position: absolute;
+  /*right: 1em;
+  top: 1em;
+  width: 1.1em;
+  height: 1.1em;*/
+  right: 5%;
   top: 5%;
-  left: 15%;
-  background: rgba(240, 235, 216, 0.25);
-  box-shadow: 2vh 2vh 5vh rgba(0, 0, 0, 0.15);
-  font-family: "Monda", sans-serif;
-  color: #f0ebd8;
-  font-size: 4vh;
-  text-align: center;
+  width: 5%;
+  height: 5%;
+  cursor: pointer;
+}
+
+.modal__close:after,
+.modal__close:before {
+  content: "";
+  position: absolute;
+  /*width: 2px;
+  height: 1.5em;*/
+  width: 100%;
+  height: 10%;
+  left: 50%;
+  top: 0;
+  background: #94d0d3;
+  display: block;
+  transform: rotate(45deg);
+  /*margin: -3px 0 0 -1px;*/
+}
+
+.modal__close:hover:after,
+.modal__close:hover:before {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+.modal__close:before {
+  transform: rotate(-45deg);
+}
+
+@media screen and (max-width: 768px) {
+  .modal__inner {
+    /*width: 90%;
+    height: 90%;*/
+    width: 80%;
+    height: 90%;
+    box-sizing: border-box;
+  }
+}
+.modal_btn {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  /*background: $cream_bg;*/
+  background: rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  /*padding: .5em 1em;
+  color: #fff;
+  border-radius: 3px;*/
+}
+
+.modal_btn:hover,
+.modal_btn:focus {
+  background: #2ecc71;
+}
+
+.modal_btn:active {
+  background: #27ae60;
+  /*box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;*/
+}
+
+/*p img {
+  max-width: 200px;
+  height: auto;
+  float: left;
+  margin: 0 1em 1em 0;
+  z-index:200;
+}*/
+.ani {
+  position: absolute;
+  width: 80%;
+  height: 50%;
+  bottom: 20%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 3vh;
+  font-weight: 700;
+  font-family: "微軟正黑體";
+  color: rgba(0, 0, 0, 0.75);
+}
+
+.ani_title {
+  font-size: 7vh;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.ani_img {
+  position: absolute;
+  width: 40%;
+  height: auto;
+  top: 5%;
+  right: 10%;
+}
+
+.animal {
+  position: absolute;
+  /*max-width: 80%;
+  height: auto;*/
+  width: auto;
+  height: 90%;
+  /*top: 45%;*/
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: animal_up 1s alternate infinite;
+}
+
+@keyframes animal_up {
+  0% {
+    transform: translate(-50%, -50%) translatey(1vh);
+  }
+}
+.animal.a1 {
+  top: 48%;
+}
+
+.animal.a2 {
+  top: 46%;
+}
+
+.animal.a3 {
+  top: 48%;
+}
+
+.animal.a4 {
+  top: 48%;
+}
+
+.animal.a5 {
+  top: 48%;
+}
+
+.animal.a6 {
+  top: 56%;
+}
+
+.shadow {
+  position: absolute;
+  width: 30%;
+  height: 5%;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 50%;
+  filter: blur(5px);
+}
+
+/*card*/
+/*.pick{
+  position:absolute;
+  width:60%;
+  height:60%;
+  top:20%;
+  left:50%;
+  transform:translate(-50%);
+  border:1px solid;
+}*/
+.card {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  top: 0;
+  transform: translate(-50%);
+  border-radius: 2vh;
+  margin: 0 auto;
+  /*width: 500px;*/
+  /*max-width: 30%;*/
+  /*min-height: 500px;*/
+  /*box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 14px 0px rgba(0, 0, 0, 0.12);*/
+  /*border:0.5vh solid $cream;*/
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.card.card1 {
+  left: 12.5%;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick1.png);
+}
+
+.card.card2 {
+  left: 50%;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick2.png);
+}
+
+.card.card3 {
+  left: 87.5%;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick3.png);
+}
+
+.card_info {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: #f0ebd8;
+  /*transform: translateY(100%)
+    translateY(-88px)
+    translateZ(0);*/
+  transform: translatey(100%) translatey(-20%);
+  transition: transform 0.5s ease-out;
+}
+
+.card_info:before {
+  z-index: -1;
+  display: block;
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick1.png);
+  /*filter: blur(10px);*/
+  filter: blur(30px);
+  background-size: cover;
+  opacity: 0.25;
+  transform: translateY(-100%) translateY(88px) translateZ(0);
+  transition: transform 0.5s ease-out;
+}
+
+.card:hover .card_info,
+.card:hover .card_info:before {
+  transform: translateY(0) translateZ(0);
+}
+
+.card_title {
+  margin: 0;
+  /*padding: 24px;*/
+  padding: 3vh;
+  font-size: 3vh;
+  font-family: "微軟正黑體";
+  line-height: 1.5;
+  letter-spacing: 0.5vh;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 800;
+}
+
+.description {
+  margin: 0;
+  padding: 0 24px 24px;
+  font-size: 18px;
+  line-height: 1.5;
 }
 
 /*-----menu-----*/
@@ -621,6 +929,14 @@ input {
   animation: line 1s infinite linear alternate;
 }
 
+@keyframes line {
+  0% {
+    stroke: #f0ebd8;
+  }
+  100% {
+    stroke: #7eabb1;
+  }
+}
 .ham .top {
   stroke-dasharray: 40 139;
 }
@@ -736,25 +1052,11 @@ a {
   box-shadow: 0vh 0vh 0vh rgba(0, 0, 0, 0.15);
 }
 
-/*.big {
-  padding: 4vh;
-  color: $cream;
-  font-family: "微軟正黑體";
-}*/
-/*.small {
-  padding: 4vh;
-  color: $cream;
-  font-family: "微軟正黑體";
-  font-weight: 800;
-  font-size: 6vh;
-}*/
-/*.m,
-.animal {
-  font-family: "Monda", sans-serif;
-  color: $yellow;
-  font-size: 1vh;
-  padding: 4vh;
-}*/
+@keyframes up {
+  0% {
+    transform: translatey(1.5vh);
+  }
+}
 .boat_menu {
   position: absolute;
   width: 30vh;
