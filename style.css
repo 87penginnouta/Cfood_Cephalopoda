@@ -1,8 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Monda&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 html {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  font-family: "Monda", "Arial", "Noto Sans TC", "微軟正黑體", sans-serif;
 }
 html::-webkit-scrollbar {
   display: none;
@@ -12,8 +14,71 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+  /*cursor:none;*/
 }
 
+/*.cursor {
+  position: absolute;
+  width: 10vh;
+  height: 10vh;
+  color: $cream;
+  border-radius: 50%;
+  border: 0.5vh solid;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.1s ease-out;
+  animation: cursor 0.5s infinite alternate;
+
+  &::after{
+    content:"";
+    position:absolute;
+    width:10vh;
+    height:10vh;
+    top:-4vh;
+    left:-4vh;
+    color:$cream;
+    border-radius:50%;
+    border:4vh solid;
+    opacity:0.25;
+    animation:cursor2 0.5s infinite alternate; 
+  }
+}
+
+@keyframes cursor{
+  0%{
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(0.75);
+  }
+}
+
+@keyframes cursor2{
+  0%{
+    transform:scale(1);
+  }
+  100%{
+    transform:scale(0.4);
+  }
+}*/
+/*.expand {
+  border: 0.5vh solid $yellow;
+  transform: translate(-50%, -50%);
+  animation: cursor3 0.5s infinite alternate;
+}
+
+@keyframes cursor3 {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(3);
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0;
+  }
+}*/
 #loading {
   position: fixed;
   width: 100vw;
@@ -32,7 +97,6 @@ body {
   position: absolute;
   width: 30vh;
   height: 30vh;
-  /*border:1px solid;*/
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -44,9 +108,8 @@ body {
   height: 20%;
   top: 39%;
   left: 50%;
-  /*background:$fish_dark;*/
   transform: translate(-50%, -50%);
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/icoooo.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/logo/loading.png);
   background-size: cover;
   animation: ico 3s linear;
   transform-origin: 30% 30%;
@@ -71,8 +134,8 @@ body {
   font-size: 4vh;
   top: 50%;
   color: #7eabb1;
-  /*font-family:PingFang SC;*/
-  font-family: 微軟正黑體;
+  font-weight: 600;
+  /*font-family: 微軟正黑體;*/
   transform: translate(-50%, -50%);
 }
 
@@ -96,12 +159,12 @@ body {
   position: absolute;
   width: 100vw;
   height: 500vh;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/3e74a3f7.png);
-  /*background-image:url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/bg/3e74a3f7.png);
   padding: 0;
   margin: 0;
   top: 0;
-  right: 0;
+  left: 50%;
+  transform: translate(-50%);
   overflow: hidden;
   /*overflow-y: scroll;*/
   opacity: 1;
@@ -111,15 +174,12 @@ body {
 @keyframes bg {
   0% {
     opacity: 0;
-    /*height:100vh;*/
   }
   50% {
     opacity: 0;
-    /*height:500vh;*/
   }
   100% {
     opacity: 1;
-    /*height:500vh;*/
   }
 }
 #section1,
@@ -159,23 +219,21 @@ body {
 .info_stop,
 .info_final,
 .info_menu,
-.info_title,
-.content_open {
+.open_title,
+.open_content {
   position: absolute;
   color: #f0ebd8;
-  font-family: "微軟正黑體";
   line-height: 1.5;
   letter-spacing: 0.5vh;
 }
 
 .info {
-  top: 5%;
+  top: 15%;
   left: 20%;
   padding-left: 3vh;
   font-size: 6vh;
   font-weight: 700;
-  /*background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
-  border-radius:3vh;*/
+  font-family: "微軟正黑體";
 }
 .info::before {
   content: "";
@@ -195,8 +253,6 @@ body {
   padding-left: 3vh;
   font-size: 6vh;
   font-weight: 700;
-  /*background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
-  border-radius:3vh;*/
 }
 .info_stop::before,
 .info_final::before,
@@ -209,27 +265,6 @@ body {
   left: 5%;
   background: #ffdb02;
   clip-path: circle(50% at 50% 50%);
-}
-
-.info_title {
-  top: 10%;
-  left: 50%;
-  width: 40%;
-  padding-left: 3vh;
-  font-size: 7vh;
-  font-weight: 700;
-  text-align: center;
-  transform: translate(-50%);
-}
-.info_title::before {
-  content: "";
-  position: absolute;
-  top: 55%;
-  left: 50%;
-  width: 100%;
-  height: 1%;
-  background: #f0ebd8;
-  transform: translate(-50%);
 }
 
 .info_stop.i_right {
@@ -267,15 +302,56 @@ body {
 .highlight_stop {
   color: #ffdb02;
   font-size: 2vh;
-  font-family: "Monda";
+  /*font-family: "Monda";*/
   letter-spacing: 0vh;
 }
 
 .highlight_number {
   color: #ffdb02;
   font-size: 4vh;
-  font-family: "Monda";
+  /*font-family: "Monda";*/
   letter-spacing: 0vh;
+}
+
+.open_title {
+  top: 15%;
+  left: 50%;
+  width: 40%;
+  padding-left: 3vh;
+  font-size: 7vh;
+  /*font-weight: 700;*/
+  text-align: center;
+  transform: translate(-50%);
+}
+.open_title::before {
+  content: "";
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  width: 100%;
+  height: 1%;
+  background: #f0ebd8;
+  transform: translate(-50%);
+}
+
+.open_sub {
+  font-size: 4vh;
+  /*font-weight: 700;*/
+}
+
+.open_title,
+.open_sub {
+  font-weight: 700;
+  font-family: "微軟正黑體";
+}
+
+.open_content {
+  top: 50%;
+  /*left: 30%;*/
+  left: 50%;
+  font-size: 2.5vh;
+  /*font-weight: 700;*/
+  font-weight: 500;
 }
 
 .open_highlight {
@@ -283,190 +359,183 @@ body {
   font-size: 3vh;
 }
 
-.content_open {
-  top: 50%;
-  left: 30%;
-  font-size: 2.5vh;
-  font-weight: 700;
-}
-
 .content {
-  font-size: 3vh;
-  font-weight: 700;
+  font-size: 2.5vh;
+  /*font-weight: 700;*/
+  font-weight: 500;
+  font-family: "Noto Sans TC";
 }
 
-.content_title {
-  font-size: 4vh;
-  font-weight: 700;
-}
-
-.progress_content {
-  position: absolute;
-  left: 70%;
-  top: 50%;
-  width: 20%;
-  height: 40%;
-  text-align: center;
-}
-
-.progress {
-  /*position: fixed;*/
-  position: absolute;
-  /*left:80vw;
-  top:15vh;*/
+#progress {
+  position: fixed;
   left: 0%;
   top: 0%;
-  display: flex;
-  grid-template-rows: 100%;
-  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  height: 12.5%;
+  text-align: center;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/bg/3e74a3f7.png);
+  animation: bg 5s;
+}
+
+.progress_bg {
+  position: absolute;
   width: 100%;
   height: 100%;
-  box-sizing: border-box;
-  /*border:1px solid;*/
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
-.intro_bartitle {
-  height: 100%;
-  display: grid;
-  align-content: space-between;
-}
-
-.intro_bartitle a {
-  color: #f0ebd8;
-  cursor: pointer;
-  margin: 0;
-  font-size: 3vh;
-  font-weight: 700;
-  letter-spacing: 0.5vh;
-  padding-left: 5vh;
-  text-decoration: none;
-}
-.intro_bartitle a:hover {
-  color: #ffdb02;
-}
-
-.introbar {
+.progress_line {
   position: absolute;
-  /*display: grid;
-  justify-items: center;
-  align-items: center;*/
-  height: 100%;
-  width: 10%;
-  top: 0%;
-  left: 0%;
-  /*border:1px solid;*/
-}
-
-.introline {
-  position: absolute;
-  width: 10%;
-  height: 90%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #f0ebd8;
-}
-
-.intro_ball {
-  position: absolute;
-  width: 50%;
+  width: 100%;
   height: 5%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%);
+}
+
+.p_line {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  top: 0;
+  background: #f0ebd8;
+  border-radius: 10vh 10vh 10vh 10vh;
+  opacity: 0.25;
+}
+
+.p_line.l1 {
+  left: 22.5%;
+}
+
+.p_line.l2 {
+  left: 42.5%;
+}
+
+.p_line.l3 {
+  left: 62.5%;
+}
+
+.stop {
+  position: absolute;
+  width: 15%;
+  height: 100%;
+  top: 0;
+  transform: translate(-50%);
+  opacity: 0.25;
+  transition: 0.5s;
+}
+.stop:hover {
+  opacity: 1;
+}
+
+.stop.s1 {
+  left: 20%;
+}
+
+.stop.s2 {
+  left: 40%;
+}
+
+.stop.s3 {
+  left: 60%;
+}
+
+.stop.s4 {
+  left: 80%;
+}
+
+.ball_intro {
+  position: absolute;
+  width: 5vh;
+  height: 5vh;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
   border-radius: 50%;
-  background: #ffdb02;
+  line-height: 5vh;
+  /*font-family: "Monda";*/
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.intro_ball.b1 {
-  top: 3%;
-}
-
-.intro_ball.b2 {
-  top: 33%;
-}
-
-.intro_ball.b3 {
-  top: 63%;
-}
-
-.intro_ball.b4 {
-  top: 93%;
+.btn_intro {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  transform: translate(-50%);
+  text-decoration: none;
+  font-size: 2vh;
+  /*font-weight: 700;*/
+  /*font-family: "微軟正黑體";*/
+  letter-spacing: 0.5vh;
+  color: #f0ebd8;
 }
 
 .fairy_content {
   position: absolute;
-  width: 26%;
-  height: 50%;
-  /*border:1px solid;*/
 }
 
 .fairy_content.f1 {
+  width: 46%;
+  height: 50%;
   bottom: 0;
   left: 0;
 }
 
 .fairy_content.f2 {
-  top: 0;
+  width: 40%;
+  height: 40%;
+  top: 15%;
   right: 0;
 }
 
-.fairy_bg {
+.fairy_talk {
   position: absolute;
-  width: 100%;
-  height: auto;
-  bottom: 0%;
-  left: 0;
-}
-
-.fairy {
-  position: absolute;
-  width: 54%;
-  height: auto;
-  bottom: 12%;
-  left: 30%;
-  /*background-image:url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/fairy1%402x.png);
-  background-size:cover;
-  background-position:center;*/
-  /*transition:0.5s;*/
-}
-.fairy:hover {
-  animation: fairy 1s infinite alternate;
-}
-
-@keyframes fairy {
-  50% {
-    transform: rotate(5deg);
-  }
-}
-.fairy_who {
-  position: absolute;
-  width: 54%;
-  height: auto;
-  top: 40%;
-  right: 10%;
-  transform: rotate(10deg);
+  width: 50%;
+  height: 30%;
+  top: 10%;
+  left: 10%;
 }
 
 .fairy_bubble {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: auto;
-  top: 10%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scalex(-1);
+}
+
+.talk_word {
+  position: absolute;
+  width: 100%;
+  height: 3.75vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(0, 0, 0, 0.3);
+  font-size: 2.5vh;
+  letter-spacing: 0.5vh;
+  line-height: 1.5;
+  text-align: center;
+  font-weight: 700;
 }
 
 .who,
-.pick {
+.pick,
+.prepare,
+.food {
   position: absolute;
-  top: 65%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  /*border:1px solid;*/
+  top: 40%;
+  transform: translate(-50%);
 }
 
 .who {
   width: 50%;
-  height: 66%;
+  height: 55%;
 }
 
 .pick {
@@ -474,50 +543,98 @@ body {
   height: 40%;
 }
 
-.modal_card {
+.prepare {
+  width: 60%;
+  height: 55%;
+}
+
+.food {
+  width: 60%;
+  height: 35%;
+}
+
+.modal_card,
+.modal_food_card,
+.modal_compare {
   position: absolute;
+  transform: translate(-50%);
+}
+
+.modal_card {
   width: 34%;
   height: 48%;
-  /*width:32vh;
-  height:32vh;*/
-  /*background: $cream_bg;*/
-  transform: translate(-50%);
+}
+
+.modal_food_card {
+  width: 15%;
+  height: 100%;
+  top: 0;
+}
+
+.modal_compare {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 50%;
 }
 
 .modal_card.c1 {
   top: 0;
-  /*left: 0;*/
   left: 12.5%;
 }
 
 .modal_card.c2 {
   top: 0;
-  /*left: 34%;*/
   left: 50%;
 }
 
 .modal_card.c3 {
   top: 0;
-  /*right: 0;*/
   left: 87.5%;
 }
 
 .modal_card.c4 {
   bottom: 0;
-  /*left: 0;*/
   left: 12.5%;
 }
 
 .modal_card.c5 {
   bottom: 0;
-  /*left: 34%;*/
   left: 50%;
 }
 
 .modal_card.c6 {
   bottom: 0;
-  /*right: 0;*/
   left: 87.5%;
+}
+
+.modal_card.c_compare {
+  top: 5%;
+  right: 5%;
+}
+
+.modal_food_card.c1 {
+  left: 10%;
+}
+
+.modal_food_card.c2 {
+  left: 27.5%;
+}
+
+.modal_food_card.c3 {
+  left: 45%;
+}
+
+.modal_food_card.c4 {
+  left: 62.5%;
+}
+
+.modal_food_card.c5 {
+  left: 80%;
+}
+
+.modal_food_card.c6 {
+  left: 97.5%;
 }
 
 /* [Object] Modal
@@ -551,37 +668,71 @@ body {
 .modal-state:checked + .modal {
   opacity: 1;
   visibility: visible;
+  transform: scaleY(0.01) scaleX(0);
+  animation: unfoldIn 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
-.modal-state:checked + .modal .modal__inner {
+.modal-state:checked + .modal .modal__inner,
+.modal-state:checked + .modal .modal__inner_food {
   top: 0;
+  transform: scale(0);
+  animation: zoomIn 0.5s 0.4s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
 }
 
+@keyframes unfoldIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /*modal打開後的空間*/
-.modal__inner {
-  transition: top 0.25s ease;
+.modal__inner,
+.modal__inner_food {
+  /*transition: top 0.25s ease;*/
   position: absolute;
-  top: -20%;
   right: 0;
   bottom: 0;
   left: 0;
   width: 50%;
-  height: 70%;
   margin: auto;
-  overflow: auto;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/3e74a3f7.png);
+  overflow: hidden;
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/bg/3e74a3f7.png);
   border-radius: 1%;
-  /*padding: 1em 2em;*/
   padding: 5% 5%;
+}
+
+.modal__inner {
+  height: 70%;
+  top: -20%;
+}
+
+.modal__inner_food {
+  height: 50%;
+  top: -10%;
+}
+
+.modal_inner_bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 /*關閉modal按鈕*/
 .modal__close {
   position: absolute;
-  /*right: 1em;
-  top: 1em;
-  width: 1.1em;
-  height: 1.1em;*/
   right: 5%;
   top: 5%;
   width: 5%;
@@ -593,16 +744,13 @@ body {
 .modal__close:before {
   content: "";
   position: absolute;
-  /*width: 2px;
-  height: 1.5em;*/
   width: 100%;
-  height: 10%;
+  height: 15%;
   left: 50%;
   top: 0;
-  background: #94d0d3;
+  background: rgba(0, 0, 0, 0.15);
   display: block;
   transform: rotate(45deg);
-  /*margin: -3px 0 0 -1px;*/
 }
 
 .modal__close:hover:after,
@@ -623,16 +771,104 @@ body {
     box-sizing: border-box;
   }
 }
-.modal_btn {
+.modal_btn,
+.modal_food_btn,
+.compare_btn {
   display: inline-block;
   width: 100%;
-  height: 100%;
-  /*background: $cream_bg;*/
-  background: rgba(0, 0, 0, 0.15);
   cursor: pointer;
-  /*padding: .5em 1em;
-  color: #fff;
-  border-radius: 3px;*/
+}
+
+.modal_btn {
+  background: rgba(0, 0, 0, 0.15);
+  height: 100%;
+}
+
+.modal_food_btn {
+  position: absolute;
+  top: 10%;
+  height: 80%;
+  border-radius: 30%;
+  background: #f0ebd8;
+  transition: 0.5s;
+}
+.modal_food_btn::before {
+  top: -10%;
+}
+.modal_food_btn::after {
+  bottom: -10%;
+}
+.modal_food_btn:hover {
+  box-shadow: 0vh 0vh 5vh #f0ebd8;
+}
+.modal_food_btn:active {
+  transform: scale(1.1);
+}
+
+.modal_food_btn:before,
+.modal_food_btn:after {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  left: 50%;
+  transform: translate(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 0.5vh;
+}
+
+.food_ribbon {
+  position: absolute;
+  width: 20%;
+  height: 40%;
+  bottom: -50%;
+  left: 50%;
+  transform: translate(-50%);
+  overflow-x: hidden;
+}
+.food_ribbon::before {
+  height: 40%;
+  top: 0;
+}
+.food_ribbon::after {
+  height: 50%;
+  top: 50%;
+  box-shadow: 0.5vh 0 rgba(0, 0, 0, 0.3), 1vh 0 rgba(0, 0, 0, 0.3), 1.5vh 0 rgba(0, 0, 0, 0.3), 2vh 0 rgba(0, 0, 0, 0.3), 2.5vh 0 rgba(0, 0, 0, 0.3), 3vh 0 rgba(0, 0, 0, 0.3), 3.5vh 0 rgba(0, 0, 0, 0.3), 4vh 0 rgba(0, 0, 0, 0.3), 4.5vh 0 rgba(0, 0, 0, 0.3), 5vh 0 rgba(0, 0, 0, 0.3), -0.5vh 0 rgba(0, 0, 0, 0.3), -1vh 0 rgba(0, 0, 0, 0.3), -1.5vh 0 rgba(0, 0, 0, 0.3), -2vh 0 rgba(0, 0, 0, 0.3), -2.5vh 0 rgba(0, 0, 0, 0.3), -3vh 0 rgba(0, 0, 0, 0.3), -3.5vh 0 rgba(0, 0, 0, 0.3), -4vh 0 rgba(0, 0, 0, 0.3), -4.5vh 0 rgba(0, 0, 0, 0.3), -5vh 0 rgba(0, 0, 0, 0.3);
+}
+
+.food_ribbon:before,
+.food_ribbon:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0.25vh;
+  transform: translate(-50%);
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.ribbon_line {
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  top: 40%;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 50% 50% 0 0 /100% 100% 0 0;
+}
+
+.food_guess {
+  position: absolute;
+  width: 4.5vh;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  writing-mode: vertical-rl;
+  font-size: 3vh;
+  line-height: 1.5;
+  letter-spacing: 0.5vh;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.3);
 }
 
 .modal_btn:hover,
@@ -642,31 +878,84 @@ body {
 
 .modal_btn:active {
   background: #27ae60;
-  /*box-shadow: 0 1px 2px rgba(0,0,0, .2) inset;*/
 }
 
-/*p img {
-  max-width: 200px;
-  height: auto;
-  float: left;
-  margin: 0 1em 1em 0;
-  z-index:200;
-}*/
-.ani {
+.ani,
+.ani_food {
   position: absolute;
-  width: 80%;
+  font-size: 2.5vh;
+  font-weight: 500;
+  letter-spacing: 0.5vh;
+  /*font-family: "微軟正黑體";*/
+  color: #f0ebd8;
+}
+
+.ani {
+  width: 50%;
+  height: 80%;
+  top: 10%;
+  left: 40%;
+}
+
+.ani_food {
+  width: 70%;
   height: 50%;
-  bottom: 20%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%);
-  font-size: 3vh;
-  font-weight: 700;
-  font-family: "微軟正黑體";
-  color: rgba(0, 0, 0, 0.75);
+}
+
+.note {
+  position: absolute;
+  width: 100%;
+  height: 45%;
+  bottom: 0;
+  left: 0;
+}
+
+.note_ul {
+  position: absolute;
+  width: 70%;
+  height: 100%;
+  top: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.note_ul.n_left {
+  left: 0;
+}
+
+.note_ul.n_right {
+  right: 0;
+}
+
+.note_li,
+.front_li {
+  padding: 1vh 0;
+}
+
+.front_li {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.note_li + .note_li {
+  border-bottom: 0.25vh solid rgba(0, 0, 0, 0.3);
+}
+
+.front_li + .front_li {
+  border-bottom: 0.25vh solid transparent;
 }
 
 .ani_title {
-  font-size: 7vh;
+  font-size: 6vh;
+  font-weight: 700;
+  color: #f0ebd8;
+}
+
+.ani_sub {
+  font-size: 2.5vh;
+  font-weight: 700;
   color: rgba(0, 0, 0, 0.3);
 }
 
@@ -674,20 +963,75 @@ body {
   position: absolute;
   width: 40%;
   height: auto;
+  top: 20%;
+  left: 0%;
+}
+
+.compare_img {
+  position: absolute;
+  width: auto;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ani_category {
+  position: absolute;
+  width: 40%;
+  height: 4vh;
+  color: rgba(240, 235, 216, 0.25);
+  font-size: 4vh;
+  letter-spacing: 0.5vh;
+  line-height: 4vh;
+}
+
+.ani_category.ca_top {
+  top: 2.5%;
+  left: 5%;
+  text-align: left;
+}
+
+.ani_category.ca_bottom {
+  bottom: 2.5%;
+  right: 5%;
+  text-align: right;
+}
+
+.ani_line {
+  position: absolute;
+  height: 0.5%;
+  background: rgba(240, 235, 216, 0.25);
+}
+
+.ani_line.line_top {
+  width: 60%;
   top: 5%;
-  right: 10%;
+  left: 20%;
+}
+
+.ani_line.line_bottom {
+  width: 55%;
+  bottom: 5%;
+  left: 5%;
+}
+
+.animal,
+.animal_compare {
+  position: absolute;
+  width: auto;
+  height: 90%;
+  transform: translate(-50%, -50%);
 }
 
 .animal {
-  position: absolute;
-  /*max-width: 80%;
-  height: auto;*/
-  width: auto;
-  height: 90%;
-  /*top: 45%;*/
   left: 50%;
-  transform: translate(-50%, -50%);
   animation: animal_up 1s alternate infinite;
+}
+
+.animal_compare {
+  left: 75%;
+  top: 50%;
 }
 
 @keyframes animal_up {
@@ -728,19 +1072,10 @@ body {
   transform: translate(-50%);
   background: rgba(0, 0, 0, 0.15);
   border-radius: 50%;
-  filter: blur(5px);
+  filter: blur(1vh);
 }
 
-/*card*/
-/*.pick{
-  position:absolute;
-  width:60%;
-  height:60%;
-  top:20%;
-  left:50%;
-  transform:translate(-50%);
-  border:1px solid;
-}*/
+/*-----card-----*/
 .card {
   position: absolute;
   width: 30%;
@@ -749,13 +1084,6 @@ body {
   transform: translate(-50%);
   border-radius: 2vh;
   margin: 0 auto;
-  /*width: 500px;*/
-  /*max-width: 30%;*/
-  /*min-height: 500px;*/
-  /*box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
-    0px 5px 8px 0px rgba(0, 0, 0, 0.14),
-    0px 1px 14px 0px rgba(0, 0, 0, 0.12);*/
-  /*border:0.5vh solid $cream;*/
   overflow: hidden;
   background-size: cover;
   background-position: center;
@@ -763,17 +1091,17 @@ body {
 
 .card.card1 {
   left: 12.5%;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick1.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick/1.png);
 }
 
 .card.card2 {
   left: 50%;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick2.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick/2.png);
 }
 
 .card.card3 {
   left: 87.5%;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick3.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick/3.png);
 }
 
 .card_info {
@@ -783,28 +1111,34 @@ body {
   margin: 0;
   padding: 0;
   background-color: #f0ebd8;
-  /*transform: translateY(100%)
-    translateY(-88px)
-    translateZ(0);*/
   transform: translatey(100%) translatey(-20%);
   transition: transform 0.5s ease-out;
 }
-
-.card_info:before {
-  z-index: -1;
-  display: block;
-  position: absolute;
+.card_info::before {
   content: "";
+  position: absolute;
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick1.png);
-  /*filter: blur(10px);*/
-  filter: blur(30px);
-  background-size: cover;
-  opacity: 0.25;
-  transform: translateY(-100%) translateY(88px) translateZ(0);
+  display: block;
+  transform: translateY(-100%) translateY(20%) translateZ(0);
   transition: transform 0.5s ease-out;
+  background-size: cover;
+  overflow: hidden;
+  filter: blur(2vh);
+  opacity: 0.25;
+  z-index: -1;
+}
+
+.card_info.c_info1:before {
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick/1.png);
+}
+
+.card_info.c_info2:before {
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick/2.png);
+}
+
+.card_info.c_info3:before {
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/pick/3.png);
 }
 
 .card:hover .card_info,
@@ -812,23 +1146,281 @@ body {
   transform: translateY(0) translateZ(0);
 }
 
-.card_title {
+.card_title,
+.description {
   margin: 0;
-  /*padding: 24px;*/
-  padding: 3vh;
-  font-size: 3vh;
-  font-family: "微軟正黑體";
+  padding: 2vh;
+  color: rgba(0, 0, 0, 0.3);
   line-height: 1.5;
   letter-spacing: 0.5vh;
-  color: rgba(0, 0, 0, 0.3);
-  font-weight: 800;
+}
+
+.card_title {
+  font-size: 3vh;
+  font-weight: 700;
+  text-align: center;
 }
 
 .description {
-  margin: 0;
-  padding: 0 24px 24px;
-  font-size: 18px;
+  font-size: 2.5vh;
+}
+
+/*-----slider-----*/
+#slider {
+  position: absolute;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+}
+
+#slider input[type="radio"] {
+  display: none;
+}
+
+#slider label {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#slides {
+  position: relative;
+  height: 100%;
+  background: #f0ebd8;
+  z-index: 1;
+}
+
+#overflow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+
+/*所有slide*/
+#slides .inner {
+  position: absolute;
+  width: 400%;
+  height: 100%;
+  transition: margin-left 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+/*每個slide內部*/
+#slides .slide {
+  width: 25%;
+  float: left;
+  /*display: flex;
+  justify-content: center;
+  align-items: center;*/
+  height: 100%;
+  background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);
+}
+
+.prepare_title {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.15);
+  color: #f0ebd8;
+  font-weight: 500;
+}
+
+.prepare_pic {
+  position: absolute;
+  width: auto;
+  height: 70%;
+  top: 20%;
+  box-shadow: 0 0 3vh rgba(0, 0, 0, 0.3);
+  transform: translate(-50%);
+}
+
+.prepare_pic.p1 {
+  left: 6%;
+}
+
+.prepare_pic.p2 {
+  left: 31%;
+}
+
+.prepare_content,
+.prepare_extra {
+  position: absolute;
+  width: 10%;
+  height: 70%;
+  transform: translate(-50%);
+  font-weight: 700;
+  letter-spacing: 0.5vh;
   line-height: 1.5;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.prepare_extra {
+  left: 60%;
+  top: 45%;
+  font-size: 6vh;
+}
+
+.prepare_content {
+  font-size: 2.5vh;
+}
+
+.prepare_content.pc1 {
+  left: 17.5%;
+  top: 20%;
+}
+
+.prepare_content.pc2 {
+  left: 42.5%;
+  top: 20%;
+}
+
+.prepare_content.pc3 {
+  left: 67.5%;
+  top: 35%;
+}
+
+#controls {
+  /*position: relative;*/
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  height: 5vh;
+  z-index: 3;
+}
+
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 5vh;
+  height: 5vh;
+  opacity: 0.3;
+}
+#controls label:hover {
+  opacity: 0.7;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(1) {
+  display: block;
+  margin: 0 -5vh 0 0;
+  float: right;
+  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(1),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(2) {
+  display: block;
+  margin: 0 0 0 -5vh;
+  float: left;
+  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+}
+
+#bullets {
+  position: absolute;
+  width: 50%;
+  height: 10%;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%);
+  text-align: center;
+  z-index: 10;
+}
+
+#bullets label {
+  display: inline-block;
+  width: 1.5vh;
+  height: 1.5vh;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.15);
+  margin: 1vh;
+  transition: 0.5s;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+  background: rgba(0, 0, 0, 0.3);
+  transform: scale(1.25);
+}
+
+/*@media screen and (max-width: 900px) {
+  #slide1:checked ~ #controls label:nth-child(2),
+  #slide2:checked ~ #controls label:nth-child(3),
+  #slide3:checked ~ #controls label:nth-child(4),
+  #slide4:checked ~ #controls label:nth-child(1),
+  #slide1:checked ~ #controls label:nth-last-child(2),
+  #slide2:checked ~ #controls label:nth-last-child(3),
+  #slide3:checked ~ #controls label:nth-last-child(4),
+  #slide4:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+  }
+  #slides {
+    max-width: calc(100% - 140px);
+    margin: 0 auto;
+  }
+}*/
+.link_content {
+  position: absolute;
+  width: 70%;
+  height: 9vh;
+  bottom: 2.5%;
+  left: 50%;
+  border-radius: 30%;
+  transform: translate(-50%);
+  background: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3vh rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.link a {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 0;
+  text-align: center;
+  text-decoration: none;
+  color: #f0ebd8;
+  font-size: 3vh;
+  letter-spacing: 0.5vh;
+  line-height: 3;
+  transition: 0.5s;
+}
+.link a:active {
+  font-size: 3.5vh;
+}
+
+.link.l_pre a {
+  left: 0%;
+}
+.link.l_pre a:hover {
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bg/bdab3c87.png);
+  color: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
+}
+
+.link.l_next a {
+  left: 60%;
+}
+.link.l_next a:hover {
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Shellfish/gh-pages/bg/905fd457.png);
+  color: rgba(0, 0, 0, 0.3);
+  transition: 0.5s;
 }
 
 /*-----menu-----*/
@@ -847,7 +1439,7 @@ body {
   position: fixed;
   /*background: $cream;*/
   /*background-image: url(https://images.plurk.com/4G3rfaZfxPHS1G1c821qzq.png);*/
-  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/b7ccac6f.png);
+  background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/bg/3e74a3f7.png);
   width: 120vw;
   height: 100vh;
   left: -150vw;
@@ -859,8 +1451,10 @@ body {
   content: "";
   position: absolute;
   width: 100%;
-  height: 30%;
-  top: 70%;
+  /*height: 30%;*/
+  height: 100%;
+  /*top: 70%;*/
+  top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.15);
 }

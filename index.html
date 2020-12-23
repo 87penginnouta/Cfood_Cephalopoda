@@ -38,56 +38,66 @@
   </div>
 
   <div id="bg">
+
+    <!--<div class="cursor"></div>
+
+    <script>
+      const cursor = document.querySelector('.cursor');
+      document.addEventListener('mousemove', e => {
+        cursor.setAttribute("style", "top: " + e.pageY + "px; left: " + e.pageX + "px;")
+      })
+      document.addEventListener('click', () => {
+        cursor.classList.add("expand");
+        setTimeout(() => {
+          cursor.classList.remove("expand");
+        }, 500)
+      })
+    </script>-->
+
     <div id="section1">
-      <div class="info_title">別用觸腕旋轉我<br><span class="content_title">頭足類表示花枝亂站</span></div>
-      
-      <div class="fairy_content f1">
-        <img class="fairy_bg" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/fairy1_bg1%402x.png" alt="">
-        <img class="fairy" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/fairy1%402x.png" alt="" />
-        <img class="fairy_bubble" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/bubble%402x.png" alt="">
-      </div>
-      
-      <div class="content_open">咦？什麼是<span class="open_highlight">頭足類</span>呀？<br>牠們是海中隱密行動的軟骨高手！<br>長長的「觸腕」是捕食獵物的武器，<br>剩下多隻「腕足」則是牠們移動的飛毛腿！<br><br>作為台灣常見的海鮮食材，<br>牠們富含蛋白質，脂肪含量極低，<br>快跟著<span class="open_highlight">三角精靈</span>一起認識頭足類吧！</div>
-
-      <div class="progress_content">
-        <div class="introbar">
-          <div class="introline">
-            <div class="intro_circle" style="top: calc(3.76318vw);"></div>
-          </div>
-          <div class="intro_ball b1"></div>
-          <div class="intro_ball b2"></div>
-          <div class="intro_ball b3"></div>
-          <div class="intro_ball b4"></div>
-        </div>
-        <div class="progress">
-          <div class="intro_bartitle">
-            <a class="btn_intro" href="#section2">我是誰</a>
-            <a class="btn_info1" href="#section3">怎麼挑</a>
-            <a class="btn_info2" href="#section4">洗香香</a>
-            <a class="btn_info3" href="#section5">吃一波</a>
-          </div>
-
-        </div>
+      <div class="open_title">別用觸腕旋轉我<br>
+        <span class="open_sub">頭足類表示花枝亂站</span>
       </div>
 
+      <div class="fairy_content f1"></div>
+
+      <div class="open_content">
+        咦？什麼是<span class="open_highlight">頭足類</span>呀？<br>
+        牠們是海中隱密行動的軟骨高手！<br>
+        長長的「觸腕」是捕食獵物的武器，<br>
+        剩下多隻「腕足」則是牠們移動的飛毛腿！<br><br>
+        作為台灣常見的海鮮食材，<br>
+        牠們富含蛋白質，脂肪含量極低，<br>
+        快跟著<span class="open_highlight">三角精靈</span>一起認識頭足類吧！
+      </div>
     </div>
 
     <div id="section2">
-      <div class="info">我是<span class="highlight">誰</span>？&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br><span class="content"><br>身體長，腳又多，你們長得好像呀！<br>點開圖片，一起看看頭足類小介紹吧。</span></div>
+      <div class="info">
+        我是<span class="highlight">誰</span>？&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+        <span class="content">身體長，腳又多，你們長得好像呀！<br>
+          點開圖片，一起看看頭足類小介紹吧。</span>
+      </div>
 
       <div class="fairy_content f2">
-        <div class="modal_card c1">
-          <label class="modal_btn" for="modal-1">
-            <img class="animal a1" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/fairy1_2%402x.png" alt="www">
+        <div class="modal_compare">
+          <label class="compare_btn" for="modal-13">
+            <img class="animal_compare" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/fairy1_2%402x.png" alt="www">
+            <div class="fairy_talk">
+              <img class="fairy_bubble" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/bubble%402x.png" alt="">
+              <span class="talk_word">點我看尺寸比較圖！</span>
+            </div>
+            
+            
           </label>
 
         </div>
       </div>
-      
+
       <div class="who">
         <div class="modal_card c1">
           <label class="modal_btn" for="modal-1">
-            <img class="animal a1" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="www">
+            <img class="animal a1" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="www">
             <div class="shadow"></div>
           </label>
 
@@ -95,35 +105,35 @@
 
         <div class="modal_card c2">
           <label class="modal_btn" for="modal-2">
-            <img class="animal a2" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/02_new2.png" alt="www">
+            <img class="animal a2" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/02.png" alt="www">
             <div class="shadow"></div>
           </label>
         </div>
 
         <div class="modal_card c3">
           <label class="modal_btn" for="modal-3">
-            <img class="animal a3" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/03.png" alt="www">
+            <img class="animal a3" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/03.png" alt="www">
             <div class="shadow"></div>
           </label>
         </div>
 
         <div class="modal_card c4">
           <label class="modal_btn" for="modal-4">
-            <img class="animal a4" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/04_new2.png" alt="www">
+            <img class="animal a4" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/04.png" alt="www">
             <div class="shadow"></div>
           </label>
         </div>
 
         <div class="modal_card c5">
           <label class="modal_btn" for="modal-5">
-            <img class="animal a5" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/05_new.png" alt="www">
+            <img class="animal a5" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/05.png" alt="www">
             <div class="shadow"></div>
           </label>
         </div>
 
         <div class="modal_card c6">
           <label class="modal_btn" for="modal-6">
-            <img class="animal a6" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/06.png" alt="www">
+            <img class="animal a6" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/06.png" alt="www">
             <div class="shadow"></div>
           </label>
         </div>
@@ -133,272 +143,650 @@
     </div>
 
     <div id="section3">
-      <div class="info">怎麼<span class="highlight">挑</span>？&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br><span class="content"><br>該如何挑回最新鮮的頭足類呢？<br>點開圖片，一起看看頭足類小介紹吧。</span></div>
+      <div class="info">
+        怎麼<span class="highlight">挑</span>？&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+        <span class="content">身體長，腳又多，你們長得好像呀！<br>
+          點開圖片，一起看看頭足類小介紹吧。</span>
+      </div>
 
       <div class="pick">
         <div class="card card1">
-        <div class='card_info'>
-          <h1 class='card_title'>明亮完整有彈性</h1>
-          <p class='description'></p>
+          <div class="card_info c_info1">
+            <h1 class="card_title">明亮完整有彈性</h1>
+            <p class="description">新鮮頭足類海鮮表皮完整無破損，身體的光澤度夠，摸起來彈性佳。</p>
+          </div>
         </div>
-      </div>
         <div class="card card2">
-        <div class='card_info'>
-          <h1 class='card_title'>有黏液</h1>
-          <p class='description'></p>
+          <div class="card_info c_info2">
+            <h1 class="card_title">有黏液</h1>
+            <p class="description">新鮮頭足類海鮮的表皮會有黏液，聞起來也不會有藥味。</p>
+          </div>
         </div>
-      </div>
         <div class="card card3">
-        <div class='card_info'>
-          <h1 class='card_title'>吸盤可吸性</h1>
-          <p class='description'></p>
+          <div class="card_info c_info3">
+            <h1 class="card_title">吸盤可吸性</h1>
+            <p class="description">用手觸摸活的頭足類海鮮時，若會被觸腕或吸盤吸住或捲住手指，表示十分有活力！</p>
+          </div>
         </div>
-      </div>
       </div>
     </div>
 
     <div id="section4">
-      <div class="info"><span class="highlight">洗</span>香香！</div>
+      <div class="info"><span class="highlight">洗</span>香香！&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+        <span class="content">身體長，腳又多，你們長得好像呀！<br>
+          點開圖片，一起看看頭足類小介紹吧。</span></div>
+
+      <div class="prepare">
+        
+        <div id="slider">
+        <input type="radio" name="slider" id="slide1" checked>
+        <input type="radio" name="slider" id="slide2">
+          <input type="radio" name="slider" id="slide3">
+        
+        <div id="slides">
+          <div id="overflow">
+            <div class="inner">
+              <div class="slide slide_1">
+                <div class="slide-content">
+                  <h2 class="prepare_title">Step 1</h2>
+                  <img class="prepare_pic p1" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/prepare/1.png" alt="">
+                  <p class="prepare_content pc1">【左右拉拉】<br><br>
+                    握住頭與身兩端，將它們分離！之後會得到長長的「頭套」，以及頭與觸腕。記得丟掉連著出現的內臟、透明軟管！</p>
+                </div>
+              </div>
+              <div class="slide slide_2">
+                <div class="slide-content">
+                  <h2 class="prepare_title">Step 2</h2>
+                  <img class="prepare_pic p2" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/prepare/2.png" alt="">
+                  <p class="prepare_content pc2">【華麗刀法】<br><br>
+                    切下頭上的鰭，劃開並除去薄膜。接著，除掉眼睛與嘴，挑去躲在觸腕中像是一圈牙齒的吸盤。剩下白白嫩嫩的部分，可以切成一圈一圈的形狀，或是在上頭劃上縱橫交錯的紋路！</p>
+                </div>
+              </div>
+              <div class="slide slide_3">
+                <div class="slide-content">
+                  <h2 class="prepare_title">Step 3</h2>
+                  <div class="prepare_extra">【龍珠】</div>
+                  <p class="prepare_content pc3">頭足類的嘴也就是傳說中的料理「龍珠」！如果想烹煮它們的話，記得先除掉藏在裡面的塑膠片喔。</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="controls">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <!--<label for="slide4"></label>-->
+        </div>
+        <div id="bullets">
+          <label for="slide1"></label>
+          <label for="slide2"></label>
+          <label for="slide3"></label>
+          <!--<label for="slide4"></label>-->
+        </div>
+      </div>
+      </div>
       
-      <img src="" alt="">
+
     </div>
 
     <div id="section5">
-      <div class="info"><span class="highlight">吃</span>一波！</div>
+      <div class="info"><span class="highlight">吃</span>一波！&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+        <span class="content">身體長，腳又多，你們長得好像呀！<br>
+          點開圖片，一起看看頭足類小介紹吧。</span></div>
+
+      <div class="food">
+        <div class="modal_food_card c1">
+          <label class="modal_food_btn" for="modal-7">
+            <!--<img class="animal a1" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="www">-->
+            <div class="food_ribbon">
+              <div class="ribbon_line"></div>
+            </div>
+            <div class="food_guess">夜市燒烤美食</div>
+          </label>
+
+        </div>
+
+        <div class="modal_food_card c2">
+          <label class="modal_food_btn" for="modal-8">
+            <!--<img class="animal a2" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/02.png" alt="www">-->
+            <div class="food_ribbon">
+              <div class="ribbon_line"></div>
+            </div>
+            <div class="food_guess">爽口熱炒料理</div>
+          </label>
+        </div>
+
+        <div class="modal_food_card c3">
+          <label class="modal_food_btn" for="modal-9">
+            <!--<img class="animal a3" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/03.png" alt="www">-->
+            <div class="food_ribbon">
+              <div class="ribbon_line"></div>
+            </div>
+            <div class="food_guess">爽脆海味羹品</div>
+          </label>
+        </div>
+
+        <div class="modal_food_card c4">
+          <label class="modal_food_btn" for="modal-10">
+            <!--<img class="animal a4" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/04.png" alt="www">-->
+            <div class="food_ribbon">
+              <div class="ribbon_line"></div>
+            </div>
+            <div class="food_guess">厚脆鮮味羹品</div>
+          </label>
+        </div>
+
+        <div class="modal_food_card c5">
+          <label class="modal_food_btn" for="modal-11">
+            <!--<img class="animal a5" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/05.png" alt="www">-->
+            <div class="food_ribbon">
+              <div class="ribbon_line"></div>
+            </div>
+            <div class="food_guess">異國鑲飯料理</div>
+          </label>
+        </div>
+
+        <div class="modal_food_card c6">
+          <label class="modal_food_btn" for="modal-12">
+            <!--<img class="animal a6" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/06.png" alt="www">-->
+            <div class="food_ribbon">
+              <div class="ribbon_line"></div>
+            </div>
+            <div class="food_guess">台日大對決</div>
+          </label>
+        </div>
+
+      </div>
       
-      <div class="who">
-        <div class="modal_card c1">
-          <label class="modal_btn" for="modal-7">
-            <img class="animal a1" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="www">
-            <div class="shadow"></div>
-          </label>
-
+      <div class="link_content">
+        <div class="link l_pre">
+          <a href="https://87penginnouta.github.io/Cfood_enter/">味補鮮知</a>
         </div>
-
-        <div class="modal_card c2">
-          <label class="modal_btn" for="modal-8">
-            <img class="animal a2" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/02_new2.png" alt="www">
-            <div class="shadow"></div>
-          </label>
+        
+        <div class="link l_next">
+          <a href="https://87penginnouta.github.io/Cfood_Shellfish/">天黑請閉殼</a>
         </div>
-
-        <div class="modal_card c3">
-          <label class="modal_btn" for="modal-9">
-            <img class="animal a3" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/03.png" alt="www">
-            <div class="shadow"></div>
-          </label>
-        </div>
-
-        <div class="modal_card c4">
-          <label class="modal_btn" for="modal-10">
-            <img class="animal a4" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/04_new2.png" alt="www">
-            <div class="shadow"></div>
-          </label>
-        </div>
-
-        <div class="modal_card c5">
-          <label class="modal_btn" for="modal-11">
-            <img class="animal a5" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/05_new.png" alt="www">
-            <div class="shadow"></div>
-          </label>
-        </div>
-
-        <div class="modal_card c6">
-          <label class="modal_btn" for="modal-12">
-            <img class="animal a6" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/06.png" alt="www">
-            <div class="shadow"></div>
-          </label>
-        </div>
-
-      </div>
-    </div>
-
-    <!--modal-->
-    <input class="modal-state" id="modal-1" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-1"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-1"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">小卷</span><br><br><span="ani_sub">【嬌小的紅精靈】</span><br><br>小卷體型嬌小（15公分內），班點偏紅，腕足較長，軀幹呈瘦長的圓錐形，軀幹後半段有一對長菱形的鰭，鰭長不會超過身體的一半。<br><br><br><span="ani_sub">【身世之謎】</span><br><br>其實小卷就是尚未成年的中卷！兩者是同一種生物（鎖管）喔。</div>
-      </div>
-    </div>
-
-    <input class="modal-state" id="modal-2" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-2"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-2"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/02_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">透抽</span><br><br><span="ani_sub">【透明仙子】</span><br><br>體型較大（15公分以上），班點偏紅，腕足較長，軀幹呈瘦長的圓錐形，軀幹後半段有對長菱形的鰭，鰭長超過身體的一半。<br><br><br><span="ani_sub">【身世之謎】</span><br><br>透抽別名為「中卷」，也就是小卷成年後的樣子！兩者是同一種生物（鎖管）喔。</div>
-      </div>
-    </div>
-
-    <input class="modal-state" id="modal-3" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-3"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-3"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/03.png" alt="" />
-        <div class="ani"><span class="ani_title">魷魚</span><br><br><span="ani_sub">【深海黃精靈】</span><br><br>身體偏黃色、腕足和觸腕幾乎一樣長，尾部有三角形的鰭，鰭長約身體的三分之一。<br><br><br><span="ani_sub">【好吃好吃】</span><br><br>常見以乾貨方式販賣（魷魚乾、水發魷魚）。</div>
-      </div>
-    </div>
-
-    <input class="modal-state" id="modal-4" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-4"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-4"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/04_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">花枝</span><br><br><span="ani_sub">【花媽頭駕到】</span><br><br>外型偏圓，具圓形頭骨，看起來就像是卡通人物「花媽」的髮型！花紋明顯，墨汁量多。<br><br><br><span="ani_sub">【墨魚先生】</span><br><br>其實墨魚就是花枝的別稱喔。</div>
-      </div>
-    </div>
-
-    <input class="modal-state" id="modal-5" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-5"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-5"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/05_new.png" alt="" />
-        <div class="ani"><span class="ani_title">軟絲</span><br><br><span="ani_sub">【橢圓胖胖】</span><br><br>身體呈現橢圓型且腳肥大，寬度較大的鰭跟身體幾乎一樣長。<br><br><br><span="ani_sub">【夥伴？】</span><br><br>跟花枝十分相似，不過軟絲沒有像塑膠的白色硬殼。</div>
-      </div>
-    </div>
-
-    <input class="modal-state" id="modal-6" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-6"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-6"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/06.png" alt="" />
-        <div class="ani"><span class="ani_title">章魚</span><br><br><span="ani_sub">【嬌小的紅精靈】</span><br><br>大頭、具8隻附肢，沒有骨頭，是一種「軟體動物」。<br><br><br><span="ani_sub">【獨樹一格】</span><br><br>網站中介紹的頭足類都有十隻附肢，但章魚是華麗的八爪魚喔。</div>
-      </div>
-    </div>
-    
-    <input class="modal-state" id="modal-7" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-7"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-7"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">烤小卷</span><br><br><span="ani_sub"><br><br><br><span="ani_sub">【】</span><br><br>夜市、漁港常見小吃，適合當作零嘴或下酒菜。將整隻去除內臟的小卷刷上醬汁並不停翻面燒烤，口感彈脆厚實，鹹鹹甜甜。
-</div>
-      </div>
-    </div>
-    
-    <input class="modal-state" id="modal-8" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-8"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-8"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">炒透抽</span><br><br><span="ani_sub"><br><br><br><span="ani_sub">【】</span><br><br>熱炒店常見料理，口感Q彈爽口，可與薑或芹菜等香料搭配翻炒。因透抽久炒易老，料理過程講求快速準確。
-。</div>
-      </div>
-    </div>
-    
-    <input class="modal-state" id="modal-9" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-9"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-9"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">魷魚羹</span><br><br><span="ani_sub"><br><br><br><span="ani_sub">【】</span><br><br>市場常見小吃，分為新鮮魷魚與水發魷魚兩種。新鮮魷魚口感厚實且鮮美彈脆，水發魷魚則清脆易咬，各有不同愛好者。
-</div>
-      </div>
-    </div>
-    
-    <input class="modal-state" id="modal-10" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-10"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-10"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">花枝羹</span><br><br><span="ani_sub"><br><br><br><span="ani_sub">【】</span><br><br>夜市常見小吃，以台北士林夜市最為著名。
-常見為花枝切塊勾芡，並搭配配料（如胡蘿蔔、木耳等）製作而成。</div>
-      </div>
-    </div>
-    
-    <input class="modal-state" id="modal-11" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-11"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-11"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">軟絲飯</span><br><br><span="ani_sub"><br><br><br><span="ani_sub">【】</span><br><br>將加入軟絲丁的炒飯塞入汆燙過的軟絲身體中，並煎至外皮微焦酥脆。外層軟絲厚實，與炒飯搭配口感豐富具飽足感。
-</div>
-      </div>
-    </div>
-    
-    <input class="modal-state" id="modal-12" type="checkbox" />
-    <div class="modal">
-      <label class="modal__bg" for="modal-12"></label>
-      <div class="modal__inner">
-        <label class="modal__close" for="modal-12"></label>
-        <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/01_new2.png" alt="" />
-        <div class="ani"><span class="ani_title">小卷</span><br><br><span="ani_sub"><br><br><br><span="ani_sub">【】</span><br><br>起源於大正時期的日本大阪，傳至台灣後成為當地常見小吃。口感外酥內嫩，常搭配柴魚片及美乃滋。
-</div>
       </div>
     </div>
 
   </div>
 
-  <!--menu-->
-  <input id="toggle" type="checkbox" />
-  <span class="menu_bg">
-
-    <div class="menu_top">
-      <a href="https://87penginnouta.github.io/Cfood_Cephalopoda/">
-        <div class="info_menu i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;01</span><br>頭足類&emsp;&emsp;&emsp;&emsp;</div>
-
-      </a>
-
-      <a href="https://87penginnouta.github.io/Cfood_Shellfish/">
-        <div class="info_menu i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;02</span><br>貝類&emsp;&emsp;&emsp;&emsp;</div>
-
-      </a>
+  <div id="progress">
+    <div class="progress_bg"></div>
+    <div class="progress_line">
+      <div class="p_line l1"></div>
+      <div class="p_line l2"></div>
+      <div class="p_line l3"></div>
     </div>
 
-    <div class="menu_bottom">
-      <a href="https://87penginnouta.github.io/Cfood_Fish/">
-        <div class="info_menu i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;03</span><br>魚類&emsp;&emsp;&emsp;&emsp;</div>
+    <a class="stop s1" href="#section2">
+      <div class="ball_intro">1</div>
+      <div class="btn_intro">我是誰</div>
+    </a>
 
-      </a>
+    <a class="stop s2" href="#section3">
+      <div class="ball_intro">2</div>
+      <div class="btn_intro">怎麼挑</div>
+    </a>
 
-      <a href="https://87penginnouta.github.io/Cfood_Shrimp/">
-        <div class="info_menu i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;04</span><br>蝦類&emsp;&emsp;&emsp;&emsp;</div>
+    <a class="stop s3" href="#section4">
+      <div class="ball_intro">3</div>
+      <div class="btn_intro">洗香香</div>
+    </a>
 
-      </a>
+    <a class="stop s4" href="#section5">
+      <div class="ball_intro">4</div>
+      <div class="btn_intro">吃一波</div>
+    </a>
+  </div>
+
+  <div id="modal_all">
+
+    <div class="who_modal">
+      <div class="who_modal_1">
+        <input class="modal-state" id="modal-1" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-1"></label>
+          <div class="modal__inner">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-1"></label>
+            <div class="ani_category ca_top">#01</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="" />
+            <div class="ani">
+              <span class="ani_title">小卷</span>
+              <span class="ani_sub">（小管、鎖管）</span><br>
+              體型嬌小（15公分內），班點偏紅，腕足較長，軀幹呈瘦長的圓錐形，軀幹後半段有一對長菱形的鰭，鰭長不會超過身體的一半。其實小卷就是尚未成年的中卷！兩者是同一種生物（鎖管）喔。
+              <div class="note">
+                <ul class="note_ul n_left">
+                  <li class="front_li"></li>
+                  <li class="front_li">類別</li>
+                  <li class="front_li">產地</li>
+                  <li class="front_li">盛產期</li>
+
+                </ul>
+                <ul class="note_ul n_right">
+                  <li class="note_li"></li>
+                  <li class="note_li">頭足類</li>
+                  <li class="note_li">南方澳、澎湖、台灣海峽</li>
+                  <li class="note_li">每年６月～８月</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="who_modal_2">
+        <input class="modal-state" id="modal-2" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-2"></label>
+          <div class="modal__inner">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-2"></label>
+            <div class="ani_category ca_top">#02</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/02.png" alt="" />
+            <div class="ani">
+              <span class="ani_title">透抽</span>
+              <span class="ani_sub">（中卷、鎖管）</span><br>
+              體型偏大（15公分以上），班點偏紅，腕足較長，軀幹呈瘦長的圓錐形，軀幹後半段有對長菱形的鰭，鰭長超過身體的一半。透抽別名為「中卷」，也就是小卷成年後的樣子！兩者是同一種生物（鎖管）喔。
+              <div class="note">
+                <ul class="note_ul n_left">
+                  <li class="front_li"></li>
+                  <li class="front_li">類別</li>
+                  <li class="front_li">產地</li>
+                  <li class="front_li">盛產期</li>
+
+                </ul>
+                <ul class="note_ul n_right">
+                  <li class="note_li"></li>
+                  <li class="note_li">頭足類</li>
+                  <li class="note_li">南方澳、澎湖、台灣海峽</li>
+                  <li class="note_li">每年８月～１１月</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="who_modal_3">
+        <input class="modal-state" id="modal-3" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-3"></label>
+          <div class="modal__inner">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-3"></label>
+            <div class="ani_category ca_top">#03</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/03.png" alt="" />
+            <div class="ani">
+              <span class="ani_title">魷魚</span>
+              <span class="ani_sub">（柔魚）</span><br>
+              身體偏黃色、腕足和觸腕幾乎一樣長，尾部有三角形的鰭，鰭長約身體的三分之一。市面常見以大西洋海域的「阿根廷魷」為主，而台灣花蓮沿海也可捕獲「南魷」，但產量較不穩定。
+              <div class="note">
+                <ul class="note_ul n_left">
+                  <li class="front_li"></li>
+                  <li class="front_li">類別</li>
+                  <li class="front_li">產地</li>
+                  <li class="front_li">盛產期</li>
+
+                </ul>
+                <ul class="note_ul n_right">
+                  <li class="note_li"></li>
+                  <li class="note_li">頭足類</li>
+                  <li class="note_li">以遠洋捕撈為主</li>
+                  <li class="note_li">全年皆有</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="who_modal_4">
+        <input class="modal-state" id="modal-4" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-4"></label>
+          <div class="modal__inner">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-4"></label>
+            <div class="ani_category ca_top">#04</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/04.png" alt="" />
+            <div class="ani">
+              <span class="ani_title">花枝</span>
+              <span class="ani_sub">（烏賊、墨魚）</span><br>
+              外型偏圓，具圓形頭骨，看起來就像是卡通人物「花媽」的髮型！內殼具有許多中空的小汽室，可幫助調整浮力。花紋明顯，墨汁量多。吸盤上有著齒環。
+              <div class="note">
+                <ul class="note_ul n_left">
+                  <li class="front_li"></li>
+                  <li class="front_li">類別</li>
+                  <li class="front_li">產地</li>
+                  <li class="front_li">盛產期</li>
+
+                </ul>
+                <ul class="note_ul n_right">
+                  <li class="note_li"></li>
+                  <li class="note_li">頭足類</li>
+                  <li class="note_li">台灣沿海皆有產</li>
+                  <li class="note_li">每年５月～８月</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="who_modal_5">
+        <input class="modal-state" id="modal-5" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-5"></label>
+          <div class="modal__inner">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-5"></label>
+            <div class="ani_category ca_top">#05</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/05.png" alt="" />
+            <div class="ani">
+              <span class="ani_title">軟絲</span>
+              <span class="ani_sub">（軟翅仔、擬烏賊）</span><br>
+              身體呈現橢圓型且腳肥大，寬度較大的鰭跟身體幾乎一樣長。跟花枝十分相似，不過軟絲沒有像塑膠的白色硬殼。常棲息於淺海礁岩區，為台灣東北角著名的頭足類海產。
+              <div class="note">
+                <ul class="note_ul n_left">
+                  <li class="front_li"></li>
+                  <li class="front_li">類別</li>
+                  <li class="front_li">產地</li>
+                  <li class="front_li">盛產期</li>
+
+                </ul>
+                <ul class="note_ul n_right">
+                  <li class="note_li"></li>
+                  <li class="note_li">頭足類</li>
+                  <li class="note_li">台灣沿海皆有產</li>
+                  <li class="note_li">每年４月～９月</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="who_modal_6">
+        <input class="modal-state" id="modal-6" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-6"></label>
+          <div class="modal__inner">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-6"></label>
+            <div class="ani_category ca_top">#06</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/06.png" alt="" />
+            <div class="ani">
+              <span class="ani_title">章魚</span>
+              <span class="ani_sub">（八爪魚、星嘴仔）</span><br>
+              大大的頭，沒有鰭狀構造。與前面介紹的其他「十足目」頭足類不同，章魚只有八隻腕足，缺少觸腕！市面上的章魚以進口為主，而台灣北部產出的小章魚「猴水仔」，與澎湖每年二到五月出現的「澎湖章魚」都正因過度捕撈急遽減少。
+              <div class="note">
+                <ul class="note_ul n_left">
+                  <li class="front_li"></li>
+                  <li class="front_li">類別</li>
+                  <li class="front_li">產地</li>
+                  <li class="front_li">盛產期</li>
+
+                </ul>
+                <ul class="note_ul n_right">
+                  <li class="note_li"></li>
+                  <li class="note_li">頭足類</li>
+                  <li class="note_li">以中、日、韓進口為主</li>
+                  <li class="note_li">每年１２月～２月</li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <a href="https://87penginnouta.github.io/Cfood_secret/">
-      <div class="about">鮮知與他們的產地&emsp;&ensp;</div>
-    </a>
+    <div class="food_modal">
 
-    <div class="boat_menu"></div>
+      <div class="food_modal_1">
+        <input class="modal-state" id="modal-7" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-7"></label>
+          <div class="modal__inner_food">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-7"></label>
+            <div class="ani_category ca_top">#01</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <!--<img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="" />-->
+            <div class="ani_food">
+              <span class="ani_title">烤小卷</span>
+              <span class="ani_sub">夜市燒烤美食</span><br>
+              夜市、漁港常見小吃，適合當作零嘴或下酒菜。將整隻去除內臟的小卷刷上醬汁並不停翻面燒烤，口感彈脆厚實，鹹鹹甜甜。<br><br>
+              <!--<span class="ani_sub">備註：</span><br>
+              近期小卷價格大幅上漲，有些攤商會將原料替換為價位較便宜的魷魚。-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <a href="https://www.facebook.com/Cfood.secret" target="_blank">
-      <img class="fb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTUxMiAyNTZjMC0xNDEuNC0xMTQuNi0yNTYtMjU2LTI1NnMtMjU2IDExNC42LTI1NiAyNTYgMTE0LjYgMjU2IDI1NiAyNTZjMS41IDAgMyAwIDQuNS0uMXYtMTk5LjJoLTU1di02NC4xaDU1di00Ny4yYzAtNTQuNyAzMy40LTg0LjUgODIuMi04NC41IDIzLjQgMCA0My41IDEuNyA0OS4zIDIuNXY1Ny4yaC0zMy42Yy0yNi41IDAtMzEuNyAxMi42LTMxLjcgMzEuMXY0MC44aDYzLjVsLTguMyA2NC4xaC01NS4ydjE4OS41YzEwNy0zMC43IDE4NS4zLTEyOS4yIDE4NS4zLTI0Ni4xeiIgZmlsbD0iI2YwZWJkOCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" alt="" />
-    </a>
+      <div class="food_modal_2">
+        <input class="modal-state" id="modal-8" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-8"></label>
+          <div class="modal__inner_food">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-8"></label>
+            <div class="ani_category ca_top">#02</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <!--<img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="" />-->
+            <div class="ani_food">
+              <span class="ani_title">炒透抽</span>
+              <span class="ani_sub">爽口熱炒料理</span><br>
+              炒店常見料理，口感Q彈爽口，可與薑或芹菜等香料搭配翻炒。因透抽久炒易老，料理過程講求快速準確。<br><br>
+              <!--<span class="ani_sub">備註：</span><br>
+              近期小卷價格大幅上漲，有些攤商會將原料替換為價位較便宜的魷魚。-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-    <a href="https://www.instagram.com/fishkw.2020/" target="_blank">
-      <img class="ig" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDg5Ljc1OCA4OS43NTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHBhdGggc3R5bGU9IiIgZD0iTTU4LjI1NSwyMy44OEgzMS41MDNjLTQuMjcsMC03Ljc0NCwzLjQ3NC03Ljc0NCw3Ljc0NHYyNi43NTJjMCw0LjI3LDMuNDc0LDcuNzQ1LDcuNzQ0LDcuNzQ1ICAgaDI2Ljc1MmM0LjI3LDAsNy43NDUtMy40NzQsNy43NDUtNy43NDVWMzEuNjI0QzY2LDI3LjM1NCw2Mi41MjYsMjMuODgsNTguMjU1LDIzLjg4eiBNNDQuODc5LDU4LjkwNiAgIGMtNy42NjcsMC0xMy45MDUtNi4yMzgtMTMuOTA1LTEzLjkwNmMwLTcuNjY3LDYuMjM4LTEzLjkwNSwxMy45MDUtMTMuOTA1YzcuNjY4LDAsMTMuOTA2LDYuMjM4LDEzLjkwNiwxMy45MDUgICBDNTguNzg1LDUyLjY2Nyw1Mi41NDYsNTguOTA2LDQ0Ljg3OSw1OC45MDZ6IE01OS4yMzIsMzMuOTdjLTEuODE1LDAtMy4yOTEtMS40NzYtMy4yOTEtMy4yOWMwLTEuODE0LDEuNDc2LTMuMjksMy4yOTEtMy4yOSAgIGMxLjgxNCwwLDMuMjksMS40NzYsMy4yOSwzLjI5QzYyLjUyMiwzMi40OTQsNjEuMDQ2LDMzLjk3LDU5LjIzMiwzMy45N3oiIGZpbGw9IiNmMGViZDgiIGRhdGEtb3JpZ2luYWw9IiM2YTQ1M2IiPjwvcGF0aD4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik00NC44NzksMzYuOTcxYy00LjQyNiwwLTguMDMsMy42MDItOC4wMyw4LjAyOGMwLDQuNDI4LDMuNjA0LDguMDMxLDguMDMsOC4wMzEgICBjNC40MjgsMCw4LjAyOS0zLjYwMyw4LjAyOS04LjAzMUM1Mi45MDgsNDAuNTc0LDQ5LjMwNiwzNi45NzEsNDQuODc5LDM2Ljk3MXoiIGZpbGw9IiNmMGViZDgiIGRhdGEtb3JpZ2luYWw9IiM2YTQ1M2IiPjwvcGF0aD4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik00NC44NzksMEMyMC4wOTQsMCwwLDIwLjA5NCwwLDQ0Ljg3OWMwLDI0Ljc4NSwyMC4wOTQsNDQuODc5LDQ0Ljg3OSw0NC44NzkgICBjMjQuNzg1LDAsNDQuODc5LTIwLjA5NCw0NC44NzktNDQuODc5Qzg5Ljc1OCwyMC4wOTQsNjkuNjY0LDAsNDQuODc5LDB6IE03MS44NzUsNTguMzc2YzAsNy41MTEtNi4xMDksMTMuNjItMTMuNjIsMTMuNjJIMzEuNTAzICAgYy03LjUxLDAtMTMuNjItNi4xMDktMTMuNjItMTMuNjJWMzEuNjI0YzAtNy41MSw2LjExLTEzLjYyLDEzLjYyLTEzLjYyaDI2Ljc1MmM3LjUxMSwwLDEzLjYyLDYuMTEsMTMuNjIsMTMuNjJWNTguMzc2eiIgZmlsbD0iI2YwZWJkOCIgZGF0YS1vcmlnaW5hbD0iIzZhNDUzYiI+PC9wYXRoPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" alt="" />
-    </a>
+      <div class="food_modal_3">
+        <input class="modal-state" id="modal-9" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-9"></label>
+          <div class="modal__inner_food">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-9"></label>
+            <div class="ani_category ca_top">#03</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <!--<img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="" />-->
+            <div class="ani_food">
+              <span class="ani_title">魷魚羹</span>
+              <span class="ani_sub">爽脆海味羹品</span><br>
+              市場常見小吃，分為新鮮魷魚與水發魷魚兩種。新鮮魷魚口感厚實且鮮美彈脆，水發魷魚則清脆易咬，各有不同愛好者。<br><br>
+              <!--<span class="ani_sub">備註：</span><br>
+              近期小卷價格大幅上漲，有些攤商會將原料替換為價位較便宜的魷魚。-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-  </span>
+      <div class="food_modal_4">
+        <input class="modal-state" id="modal-10" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-10"></label>
+          <div class="modal__inner_food">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-10"></label>
+            <div class="ani_category ca_top">#04</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <!--<img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="" />-->
+            <div class="ani_food">
+              <span class="ani_title">花枝羹</span>
+              <span class="ani_sub">厚脆鮮味羹品</span><br>
+              夜市常見小吃，以台北士林夜市最為著名。常見為花枝切塊勾芡，並搭配胡蘿蔔、木耳等配料製作而成。<br><br>
+              <!--<span class="ani_sub">備註：</span><br>
+              近期小卷價格大幅上漲，有些攤商會將原料替換為價位較便宜的魷魚。-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <span class="text">MENU</span>
+      <div class="food_modal_5">
+        <input class="modal-state" id="modal-11" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-11"></label>
+          <div class="modal__inner_food">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-11"></label>
+            <div class="ani_category ca_top">#05</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <!--<img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="" />-->
+            <div class="ani_food">
+              <span class="ani_title">軟絲飯</span>
+              <span class="ani_sub">異國鑲飯料理</span><br>
+              將炒飯塞入汆燙過的軟絲身體中，並煎至外皮微焦酥脆。外層軟絲厚實，與炒飯搭配口感豐富具飽足感。<br><br>
+              <!--<span class="ani_sub">備註：</span><br>
+              近期小卷價格大幅上漲，有些攤商會將原料替換為價位較便宜的魷魚。-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-  <div id="menu">
-    <div class="hamburger">
+      <div class="food_modal_6">
+        <input class="modal-state" id="modal-12" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-12"></label>
+          <div class="modal__inner_food">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-12"></label>
+            <div class="ani_category ca_top">#06</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <!--<img class="ani_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/01.png" alt="" />-->
+            <div class="ani_food">
+              <span class="ani_title">章魚燒</span>
+              <span class="ani_sub">台日大對決</span><br>
+              起源於大正時期的日本大阪，傳至台灣後成為當地常見小吃。口感外酥內嫩，常搭配柴魚片及美乃滋。<br><br>
+              <!--<span class="ani_sub">備註：</span><br>
+              近期小卷價格大幅上漲，有些攤商會將原料替換為價位較便宜的魷魚。-->
+            </div>
+          </div>
+        </div>
+      </div>
 
-      <label for="toggle" class="la">
-        <svg class="ham hamRotate" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
-          <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
-          <path class="line middle" d="m 30,50 h 40" />
-          <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
-        </svg>
-      </label>
+    </div>
+    
+    <div class="compare_modal">
+              <input class="modal-state" id="modal-13" type="checkbox" />
+        <div class="modal">
+          <label class="modal__bg" for="modal-13"></label>
+          <div class="modal__inner">
+            <div class="modal_inner_bg"></div>
+            <label class="modal__close" for="modal-13"></label>
+            <div class="ani_category ca_top">#??</div>
+            <div class="ani_category ca_bottom">Cephalopoda</div>
+            <div class="ani_line line_top"></div>
+            <div class="ani_line line_bottom"></div>
+            <img class="compare_img" src="https://raw.githubusercontent.com/87penginnouta/Cfood_Cephalopoda/gh-pages/animal/compare.png" alt="" />
+          </div>
+        </div>
+    </div>
 
+  </div>
+
+  <div id="menu_all">
+    <!--menu-->
+    <input id="toggle" type="checkbox" />
+    <span class="menu_bg">
+
+      <div class="menu_top">
+        <a href="https://87penginnouta.github.io/Cfood_Cephalopoda/">
+          <div class="info_menu i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;01</span><br>頭足類&emsp;&emsp;&emsp;&emsp;</div>
+
+        </a>
+
+        <a href="https://87penginnouta.github.io/Cfood_Shellfish/">
+          <div class="info_menu i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;02</span><br>貝類&emsp;&emsp;&emsp;&emsp;</div>
+
+        </a>
+      </div>
+
+      <div class="menu_bottom">
+        <a href="https://87penginnouta.github.io/Cfood_Fish/">
+          <div class="info_menu i_left">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;03</span><br>魚類&emsp;&emsp;&emsp;&emsp;</div>
+
+        </a>
+
+        <a href="https://87penginnouta.github.io/Cfood_Shrimp/">
+          <div class="info_menu i_right">&emsp;&ensp;<span class="highlight_stop">STOP&ensp;——————————</span><span class="highlight_number">&ensp;04</span><br>蝦類&emsp;&emsp;&emsp;&emsp;</div>
+
+        </a>
+      </div>
+
+      <a href="https://87penginnouta.github.io/Cfood_secret/">
+        <div class="about">鮮知與他們的產地&emsp;&ensp;</div>
+      </a>
+
+      <div class="boat_menu"></div>
+
+      <a href="https://www.facebook.com/Cfood.secret" target="_blank">
+        <img class="fb" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDUxMiA1MTIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiIGNsYXNzPSIiPjxnPjxwYXRoIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgZD0ibTUxMiAyNTZjMC0xNDEuNC0xMTQuNi0yNTYtMjU2LTI1NnMtMjU2IDExNC42LTI1NiAyNTYgMTE0LjYgMjU2IDI1NiAyNTZjMS41IDAgMyAwIDQuNS0uMXYtMTk5LjJoLTU1di02NC4xaDU1di00Ny4yYzAtNTQuNyAzMy40LTg0LjUgODIuMi04NC41IDIzLjQgMCA0My41IDEuNyA0OS4zIDIuNXY1Ny4yaC0zMy42Yy0yNi41IDAtMzEuNyAxMi42LTMxLjcgMzEuMXY0MC44aDYzLjVsLTguMyA2NC4xaC01NS4ydjE4OS41YzEwNy0zMC43IDE4NS4zLTEyOS4yIDE4NS4zLTI0Ni4xeiIgZmlsbD0iI2YwZWJkOCIgZGF0YS1vcmlnaW5hbD0iIzAwMDAwMCIgc3R5bGU9IiIgY2xhc3M9IiI+PC9wYXRoPjwvZz48L3N2Zz4=" alt="" />
+      </a>
+
+      <a href="https://www.instagram.com/fishkw.2020/" target="_blank">
+        <img class="ig" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZlcnNpb249IjEuMSIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHhtbG5zOnN2Z2pzPSJodHRwOi8vc3ZnanMuY29tL3N2Z2pzIiB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgeD0iMCIgeT0iMCIgdmlld0JveD0iMCAwIDg5Ljc1OCA4OS43NTgiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMiA1MTIiIHhtbDpzcGFjZT0icHJlc2VydmUiPjxnPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgoJPHBhdGggc3R5bGU9IiIgZD0iTTU4LjI1NSwyMy44OEgzMS41MDNjLTQuMjcsMC03Ljc0NCwzLjQ3NC03Ljc0NCw3Ljc0NHYyNi43NTJjMCw0LjI3LDMuNDc0LDcuNzQ1LDcuNzQ0LDcuNzQ1ICAgaDI2Ljc1MmM0LjI3LDAsNy43NDUtMy40NzQsNy43NDUtNy43NDVWMzEuNjI0QzY2LDI3LjM1NCw2Mi41MjYsMjMuODgsNTguMjU1LDIzLjg4eiBNNDQuODc5LDU4LjkwNiAgIGMtNy42NjcsMC0xMy45MDUtNi4yMzgtMTMuOTA1LTEzLjkwNmMwLTcuNjY3LDYuMjM4LTEzLjkwNSwxMy45MDUtMTMuOTA1YzcuNjY4LDAsMTMuOTA2LDYuMjM4LDEzLjkwNiwxMy45MDUgICBDNTguNzg1LDUyLjY2Nyw1Mi41NDYsNTguOTA2LDQ0Ljg3OSw1OC45MDZ6IE01OS4yMzIsMzMuOTdjLTEuODE1LDAtMy4yOTEtMS40NzYtMy4yOTEtMy4yOWMwLTEuODE0LDEuNDc2LTMuMjksMy4yOTEtMy4yOSAgIGMxLjgxNCwwLDMuMjksMS40NzYsMy4yOSwzLjI5QzYyLjUyMiwzMi40OTQsNjEuMDQ2LDMzLjk3LDU5LjIzMiwzMy45N3oiIGZpbGw9IiNmMGViZDgiIGRhdGEtb3JpZ2luYWw9IiM2YTQ1M2IiPjwvcGF0aD4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik00NC44NzksMzYuOTcxYy00LjQyNiwwLTguMDMsMy42MDItOC4wMyw4LjAyOGMwLDQuNDI4LDMuNjA0LDguMDMxLDguMDMsOC4wMzEgICBjNC40MjgsMCw4LjAyOS0zLjYwMyw4LjAyOS04LjAzMUM1Mi45MDgsNDAuNTc0LDQ5LjMwNiwzNi45NzEsNDQuODc5LDM2Ljk3MXoiIGZpbGw9IiNmMGViZDgiIGRhdGEtb3JpZ2luYWw9IiM2YTQ1M2IiPjwvcGF0aD4KCTxwYXRoIHN0eWxlPSIiIGQ9Ik00NC44NzksMEMyMC4wOTQsMCwwLDIwLjA5NCwwLDQ0Ljg3OWMwLDI0Ljc4NSwyMC4wOTQsNDQuODc5LDQ0Ljg3OSw0NC44NzkgICBjMjQuNzg1LDAsNDQuODc5LTIwLjA5NCw0NC44NzktNDQuODc5Qzg5Ljc1OCwyMC4wOTQsNjkuNjY0LDAsNDQuODc5LDB6IE03MS44NzUsNTguMzc2YzAsNy41MTEtNi4xMDksMTMuNjItMTMuNjIsMTMuNjJIMzEuNTAzICAgYy03LjUxLDAtMTMuNjItNi4xMDktMTMuNjItMTMuNjJWMzEuNjI0YzAtNy41MSw2LjExLTEzLjYyLDEzLjYyLTEzLjYyaDI2Ljc1MmM3LjUxMSwwLDEzLjYyLDYuMTEsMTMuNjIsMTMuNjJWNTguMzc2eiIgZmlsbD0iI2YwZWJkOCIgZGF0YS1vcmlnaW5hbD0iIzZhNDUzYiI+PC9wYXRoPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjxnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjwvZz4KPGcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPC9nPgo8ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8L2c+CjwvZz48L3N2Zz4=" alt="" />
+      </a>
+
+    </span>
+
+    <span class="text">MENU</span>
+
+    <div id="menu">
+      <div class="hamburger">
+
+        <label for="toggle" class="la">
+          <svg class="ham hamRotate" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+            <path class="line top" d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+            <path class="line middle" d="m 30,50 h 40" />
+            <path class="line bottom" d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+          </svg>
+        </label>
+
+      </div>
     </div>
 
   </div>
