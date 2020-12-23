@@ -1410,7 +1410,7 @@ body {
 }
 .link.l_pre a:hover {
   background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_enter/master/bg/bdab3c87.png);
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 
@@ -1419,7 +1419,7 @@ body {
 }
 .link.l_next a:hover {
   background-image: url(https://raw.githubusercontent.com/87penginnouta/Cfood_Shellfish/gh-pages/bg/905fd457.png);
-  color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.15);
   transition: 0.5s;
 }
 
