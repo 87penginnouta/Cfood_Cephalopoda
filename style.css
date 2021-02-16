@@ -1696,6 +1696,17 @@ body {
   animation: bg 5s;
 }
 
+@media screen and (max-width: 1200px) {
+  #menu {
+    position: fixed;
+    width: 15vh;
+    height: 15vh;
+    top: 10%;
+    right: 5%;
+    border: 0.25vh solid #f0ebd8;
+  }
+}
+
 .menu_bg {
   position: fixed;
   /*background: $cream;*/
