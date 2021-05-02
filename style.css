@@ -16,6 +16,7 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+  -webkit-overflow-scrolling: touch
 }
 
 .loading_wrapper {
@@ -114,7 +115,7 @@ body {
   right: 0;
   bottom: 0;
   z-index: -1;
-  padding: 25px 0;
+  padding: 50px 0;
   margin: 0;
 }
 
@@ -1838,3 +1839,15 @@ body {
 .ham.active .bottom {
   stroke-dashoffset: -138px;
 }
+
+/* .text {
+  position: fixed;
+  width: 10vh;
+  height: 5vh;
+  top: 52%;
+  left: 7.5vh;
+  transform: translate(-50%);
+  text-align: center;
+  color: #f0ebd8;
+  font-size: 1vh;
+} */
