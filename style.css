@@ -23,7 +23,7 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-image: url("./img/bg/loading_bg.png");
+  background-image: url("./img/bg/loading_bg.jpg");
   z-index: 999;
   /* opacity: 0; */
   /* animation: loading 3s linear; */
@@ -53,7 +53,7 @@ body {
   transform: translate(-50%, -50%);
   background-image: url("./img/bg/loading.png");
   background-size: cover;
-  animation: ico 3s linear;
+  animation: ico 3s linear infinite;
   transform-origin: 30% 30%;
 }
 
@@ -101,15 +101,17 @@ body {
 }
 
 #bg {
-  position: relative;
+  /* position: relative; */
+  position: absolute;
   width: 100vw;
   height: 500vh;
   background-image: url("./img/bg/bg.png");
   padding: 0;
   margin: 0;
   top: 0;
-  left: 50%;
-  transform: translate(-50%);
+  /* left: 50%; */
+  /* transform: translate(-50%); */
+  left: 0;
   overflow: hidden;
   /* opacity: 1; */
   box-shadow: 0 1vh 3vh rgba(0, 0, 0, 0.3);
