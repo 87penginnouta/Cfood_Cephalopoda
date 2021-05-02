@@ -2,7 +2,6 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
   font-family: "Monda", "Arial", "Noto Sans TC", "微軟正黑體", sans-serif;
-  -webkit-overflow-scrolling: touch;
 }
 
 html {
@@ -17,6 +16,7 @@ body {
   border: none;
   padding: 0;
   margin: 0;
+  -webkit-overflow-scrolling: touch
 }
 
 .loading_wrapper {
@@ -391,7 +391,6 @@ body {
 .content,
 .info_stop,
 .info_final,
-.info_menu,
 .open_title,
 .open_content {
   position: absolute;
@@ -422,8 +421,7 @@ body {
 }
 
 .info_stop,
-.info_final,
-.info_menu {
+.info_final {
   top: 5%;
   padding-left: 3vh;
   font-size: 6vh;
@@ -431,8 +429,7 @@ body {
 }
 
 .info_stop::before,
-.info_final::before,
-.info_menu::before {
+.info_final::before {
   content: "";
   position: absolute;
   width: 6vh;
@@ -454,23 +451,6 @@ body {
 
 .info_final {
   left: 10%;
-}
-
-.info_menu {
-  text-decoration: none;
-  transition: 0.25s;
-}
-
-.info_menu:hover {
-  color: #ffdb02;
-}
-
-.info_menu.i_right {
-  left: 60%;
-}
-
-.info_menu.i_left {
-  left: 30%;
 }
 
 .highlight {
@@ -1371,17 +1351,17 @@ body {
 
 .card.card1 {
   left: 12.5%;
-  background-image: url("./img/pick/1.png");
+  background-image: url("./img/pick/1.jpg");
 }
 
 .card.card2 {
   left: 50%;
-  background-image: url("./img/pick/2.png");
+  background-image: url("./img/pick/2.jpg");
 }
 
 .card.card3 {
   left: 87.5%;
-  background-image: url("./img/pick/3.png");
+  background-image: url("./img/pick/3.jpg");
 }
 
 .card_info {
