@@ -1,0 +1,72 @@
+@media screen and (max-width: 1200px) {
+
+    .open_title {
+        font-size: 6vh;
+    }
+
+    .who {
+        width: 55%;
+    }
+
+    .fairy_content.f2 {
+        width: 30%;
+        height: 30%;
+    }
+
+    .fairy_bubble {
+        width: 120%;
+    }
+
+    .talk_word {
+        font-size: 1.8vh;
+    }
+
+    .pick {
+        width: 67.5%;
+    }
+
+    .prepare {
+        width: 67.5%;
+    }
+
+    .food {
+        width: 67.5%;
+    }
+
+    .modal__inner {
+        width: 72.5%;
+        height: 90%;
+        box-sizing: border-box;
+    }
+
+    .sns_content.s_menu {
+        width: 17.5%;
+    }
+}
+
+/* @media screen and (max-width: 768px) {
+    .modal__inner {
+        width: 80%;
+        height: 90%;
+        box-sizing: border-box;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    #slide1:checked~#controls label:nth-child(2),
+    #slide2:checked~#controls label:nth-child(3),
+    #slide3:checked~#controls label:nth-child(4),
+    #slide4:checked~#controls label:nth-child(1),
+    #slide1:checked~#controls label:nth-last-child(2),
+    #slide2:checked~#controls label:nth-last-child(3),
+    #slide3:checked~#controls label:nth-last-child(4),
+    #slide4:checked~#controls label:nth-last-child(1) {
+        margin: 0;
+    }
+
+    #slides {
+        max-width: calc(100% - 140px);
+        margin: 0 auto;
+    }
+} */
