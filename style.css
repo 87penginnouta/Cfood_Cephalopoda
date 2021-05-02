@@ -23,7 +23,8 @@ body {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-image: url("./img/bg/loading_bg.jpg");
+  /* background-image: url("./img/bg/loading_bg.jpg"); */
+  background-color: #f0ebd8;
   z-index: 999;
   /* opacity: 0; */
   /* animation: loading 3s linear; */
@@ -51,8 +52,7 @@ body {
   top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
-/*   background-image: url("./img/bg/loading.png"); */
-  background-color: #f0ebd8;
+  background-image: url("./img/bg/loading.png");
   background-size: cover;
   animation: ico 3s linear infinite;
   transform-origin: 30% 30%;
