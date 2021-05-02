@@ -557,6 +557,7 @@ body {
   height: 12.5%;
   text-align: center;
   background-image: url("./img/bg/bg.jpg");
+  border: none;
 }
 
 .progress_bg {
@@ -566,6 +567,7 @@ body {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.3);
+  border: none;
 }
 
 .progress_line {
