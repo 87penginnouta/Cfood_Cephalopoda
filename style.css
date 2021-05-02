@@ -51,7 +51,8 @@ body {
   top: 39%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("./img/bg/loading.png");
+/*   background-image: url("./img/bg/loading.png"); */
+  background-color: #f0ebd8;
   background-size: cover;
   animation: ico 3s linear infinite;
   transform-origin: 30% 30%;
