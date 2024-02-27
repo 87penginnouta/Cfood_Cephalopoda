@@ -108,12 +108,14 @@ body {
 }
 
 #footer {
-  position: fixed;
+  /* position: fixed; */
+  position: absolute;
   background-image: url("./img/bg/bg.jpg");
   min-height: 30vh;
   left: 0;
   right: 0;
-  bottom: 0;
+  /* bottom: 0; */
+  top:500vh;
   z-index: -1;
   padding: 50px 0;
   margin: 0;
