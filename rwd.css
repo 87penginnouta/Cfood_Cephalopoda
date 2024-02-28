@@ -1,15 +1,12 @@
 @media (max-width: 1200px) {
 
-    .open_title {
-        font-size: 6vh;
-    }
-
-    .open_sub {
-        font-size: 3vh;
+    .fairy_content.f1{
+        left: 55%;
     }
 
     .who {
-        width: 55%;
+        /* width: 55%; */
+        width: 70%;
     }
 
     .fairy_content.f2 {
@@ -18,59 +15,76 @@
     }
 
     .fairy_bubble {
-        width: 120%;
+        /* width: 120%; */
+        width: 150%;
     }
 
     .talk_word {
-        font-size: 1.8vh;
+        width: 150%;
     }
 
     .pick {
-        width: 67.5%;
+        /* width: 67.5%; */
+        width:70%;
+    }
+
+    .pick_area{
+        width: 49%;
+    }
+
+    .pick_img{
+        height: 60%;
     }
 
     .prepare {
-        width: 67.5%;
+        /* width: 67.5%; */
+        width: 70%;
+        height: 55%;
+        flex-wrap: wrap;
+    }
+
+    .prepare_img{
+        width: 40%;
+        height: auto;
+    }
+
+    .prepare_extra{
+        margin-top: 20px;
     }
 
     .food {
-        width: 67.5%;
+        /* width: 67.5%; */
+        width: 70%;
     }
 
     .link_text {
-        font-size: 2.25vh;
-    }
-
-    .link_text:active {
-        font-size: 2.75vh;
-    }
-
-    .link_arrow {
-        width: 2vh;
-        height: 2vh;
-        top: 45%;
+        font-size: 1.1rem;
     }
 
     .modal__inner {
-        width: 72.5%;
-        height: 90%;
+        /* width: 72.5%; */
+        width: 75%;
+        /* height: 90%; */
+        height: 80%;
         box-sizing: border-box;
     }
 
-    .sns_content.s_menu {
-        width: 17.5%;
+    .ani_img{
+        width: auto;
+        height: 50%;
     }
+
+    .ani{
+        width: 60%;
+    }
+
+    .af{
+        height:50%;
+    }
+
 }
 
-/* @media screen and (max-width: 768px) {
-    .modal__inner {
-        width: 80%;
-        height: 90%;
-        box-sizing: border-box;
-    }
-}
-
-@media screen and (max-width: 900px) {
+/*@media screen and (max-width: 900px) {
 
     #slide1:checked~#controls label:nth-child(2),
     #slide2:checked~#controls label:nth-child(3),
@@ -102,48 +116,39 @@
     .open_title {
         width: 80%;
         left: 7.5%;
-        font-size: 36px;
-        text-align: left;
-        line-height: 1;
-        padding-left: 0;
-        letter-spacing: 0.1em;
-    }
-
-    .open_title::before {
-        /* display: none; */
-        margin-top: 50px;
+        top:15%;
+        font-size: 34px;
     }
 
     .open_sub {
         font-size: 18px;
     }
 
-    .top_animal {
-        display: none;
-    }
-
-    .fairy_open {
-        display: none;
+    .fairy_content.f1{
+        top:30%;
+        left: 25%;
+        height: 20%;
     }
 
     .open_content {
         left: 7.5%;
         width: 90%;
-        top: 35%;
-        font-size: 15px;
-        letter-spacing: 0.1em;
-        line-height: 180%;
-    }
-
-    .open_highlight {
+        top: 50%;
         font-size: 15px;
     }
 
     .fairy_content.f2 {
-        top: 0;
-        right: 7.5%;
         width: 90%;
-        margin-top: -200px;
+        margin-top: -180px;
+    }
+
+    .fairy_bubble{
+        width:110%;
+    }
+
+    .talk_word{
+        width: 110%;
+        font-size: 15px;
     }
 
     .compare_img{
@@ -153,19 +158,15 @@
 
     .info {
         left: 7.5%;
-        font-size: 32px;
-        letter-spacing: 0.05em;
-        padding-left: 0;
+        font-size: 30px;
     }
 
     .info::before {
-        margin-top: -10%;
+        display: none;
     }
 
     .content {
         font-size: 15px;
-        /* line-height: 180%; */
-        margin-top: 10px;
     }
 
     .who,
@@ -179,234 +180,82 @@
     }
 
     .modal_card {
-        width: 150px;
-        height: 150px;
-        transform: none;
+        width:45%;
+        height: 30%;
     }
 
-    .modal_card.c1,
-    .modal_card.c3,
-    .modal_card.c5 {
-        left: 0;
+    .pick{
+        align-content:flex-start;
     }
 
-    .modal_card.c2,
-    .modal_card.c4,
-    .modal_card.c6 {
-        left: 55%;
+    .pick_area{
+        width: 100%;
+        height: 25%;
+        margin:10px 0;
     }
 
-    .modal_card.c3,
-    .modal_card.c4 {
-        top: 35%;
-    }
-
-    .card {
-        /* width: 100%; */
-        width: 45%;
-        /* height: 30%; */
-        height: 45%;
-        transform: none;
-    }
-
-    /* .card.card1,
-    .card.card2,
-    .card.card3 {
-        left: 0;
-    } */
-
-    /* .card.card2 {
-        top: 35%;
-    } */
-
-    /* .card.card3 {
-        top: 70%;
-    } */
-
-    .card.card1,
-    .card.card3 {
-        left: 0;
-    }
-
-    .card.card2 {
-        left: 50%;
-    }
-
-    .card.card3 {
-        top: 50%;
-    }
-
-    /* .card_info {
-        transform: translateY(100%) translateY(-30%);
-    } */
-
-    .card_title,
-    .description {
+    .pick_title{
         font-size: 15px;
-        padding-bottom: 0;
-        letter-spacing: 0.05em;
-    }
-
-    #slides {
-        background: rgba(0, 0, 0, 0);
-        /* width:10px; */
-    }
-
-    #slides .slide {
-        width: 0;
-        /* background-image: url("./img/bg/bg.jpg"); */
-        /* z-index: -1; */
-    }
-
-    .prepare_title {
-        display: none;
-    }
-
-    .prepare_pic,
-    .prepare_content {
-        transform: none;
-    }
-
-    .prepare_pic {
-        /* height: 40%; */
-        height: 55%;
-        top: 5%;
-    }
-
-    .prepare_pic.p1 {
-        /* left: 5%; */
-        left: 2%;
-    }
-
-    .prepare_pic.p2 {
-        /* left: 30%; */
-        left: 27%;
     }
 
     .prepare_content {
-        /* width: 25%; */
-        width: 22.5%;
         font-size: 15px;
-        color: rgba(0, 0, 0, 0.5);
-        font-weight: 500;
     }
 
-    /* .prepare_content.pc1,
-    .prepare_content.pc2,
-    .prepare_content.pc3 {
-        top: 50%;
-    } */
-
-    /* .prepare_content.pc1 {
-        left: 0;
-    } */
-
-    /* .prepare_content.pc2 {
-        left: 25%;
-    } */
-
-    .prepare_content.pc1,
-    .prepare_content.pc2 {
-        display: none;
+    .prepare{
+        height: 70%;
     }
 
-    .prepare_content.pc3 {
-        /* left: 50%; */
-        left: 52%;
-        /* top: 50%; */
-        top: 40%;
+    .prepare_img{
+        width: 60%;
+        margin: 10px;
     }
 
     .prepare_extra {
-        width: 30%;
+        /* width: 30%; */
         left: 72%;
-        /* top: 30%; */
         top: 25%;
-        font-size: 32px;
-    }
-
-    #bullets {
-        /* top: 95%; */
-        top: 70%;
-        width: 80%;
-    }
-
-    #bullets label {
-        width: 18px;
-        height: 18px;
-        margin: 18px;
+        font-size: 18px;
     }
 
     .food {
-        margin-top: 30px;
+        /* margin-top: 30px; */
+        height: 50%;
     }
 
     .modal_food_card {
-        width: 90px;
-        height: 180px;
-        transform: none;
-    }
-
-    .modal_food_card.c4,
-    .modal_food_card.c5,
-    .modal_food_card.c6 {
-        top: 32.5%;
-    }
-
-    .modal_food_card.c1,
-    .modal_food_card.c4 {
-        left: 0;
-    }
-
-    .modal_food_card.c2,
-    .modal_food_card.c5 {
-        left: 35%;
-    }
-
-    .modal_food_card.c3,
-    .modal_food_card.c6 {
-        left: 70%;
-    }
-
-    .modal_food_card.c1 .food_ribbon,
-    .modal_food_card.c2 .food_ribbon,
-    .modal_food_card.c3 .food_ribbon {
-        display: none;
+        /* width: 90px; */
+        width: 30%;
+        /* height: 180px; */
+        height: 45%;
     }
 
     .food_guess {
         font-size: 15px;
-        left: 40%;
     }
 
     #footer_content {
-        width: 85%;
+        width: 90%;
     }
 
-    .link_arrow{
-        width:48px;
-        height:24px;
+    .footer_logo{
+        width: 100%;
     }
 
-    .link_arrow.a_left{
-        left:85%;
+    .foot_img{
+        height: 50%;
     }
 
-    .link_arrow.a_right{
-        left:15%;
+    .copyright{
+        margin-top: -30px;
     }
 
-    .link_text{
-        font-size: 15px;
-        line-height: 3.5vh;
-    }
-
-    .sns_content.s_footer {
+    .link_content{
         display: none;
     }
 
     .modal__inner {
-        width: 90%;
+        width: 80%;
         height: 70%;
     }
 
@@ -424,24 +273,19 @@
         display: none;
     }
 
-    .ani_category.ca_top,
-    .ani {
+    .ani_category.ca_top{
+        top:16px;
         left: 7.5%;
     }
 
-    .ani_category.ca_top{
-        top:16px;
-    }
-
-    .ani,
-    .ani_food {
-        width: 85%;
-        top: 60px;
+    .ani{
+        width: 100%;
+        margin-top: 60px;
         font-size: 15px;
     }
 
     .ani_title {
-        font-size: 36px;
+        font-size: 34px;
         line-height: 250%;
     }
 
@@ -449,13 +293,12 @@
         font-size: 18px;
     }
 
-    .note_ul {
-        top: 35%;
-    }
-
     .modal__inner_food{
         width:80%;
-        height:32%;
+    }
+
+    .sns_btn{
+        background-color: #f0ebd8;
     }
 
     #toggle {
