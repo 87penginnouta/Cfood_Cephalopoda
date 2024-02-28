@@ -11,7 +11,7 @@ var jq = $;
 AOS.init();
 
 var scrollObj = skrollr.init({
-  //跟smoothScrolling的功能，主要都是讓scroll事件不要這麼敏感，動畫才不會看起來卡卡的。
+  //smoothScrolling，讓scroll事件不要這麼敏感，動畫才不會看起來卡卡的。
   smoothScrolling: true,
   smoothScrollingDuration: 200,
 
@@ -24,7 +24,7 @@ var scrollObj = skrollr.init({
   //可以調整ScrollBar往下拉對應到keyframe的值等倍放大
   scale: 1,
 
-  //讓文本高度自動達到滿足Keyframe的條件
+  //讓高度自動達到滿足Keyframe的條件
   //forceHeight: true,
 
   //針對行動裝置的功能
@@ -40,6 +40,7 @@ var scrollObj = skrollr.init({
     console.log(data.curTop);
   }
 });
+
 
 /*-----錨點-----*/
 $(function () {
@@ -70,11 +71,11 @@ $(function () {
   $('#gotop').click(function () {
     $('html,body').animate({
       scrollTop: 0
-    }, 'slow'); /* 返回到最頂上 */
+    }, 'slow'); 
     return false;
   });
 
-  /* 偵測卷軸滑動時，往下滑超過400px就讓GoTop按鈕出現 */
+  /* 偵測卷軸滑動時，往下滑超過就讓GoTop按鈕出現 */
   $(window).scroll(function () {
     if ($(this).scrollTop() > 500) {
       $('#gotop').fadeIn();
